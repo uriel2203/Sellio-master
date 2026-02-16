@@ -1,9 +1,9 @@
 @php
     $profile = (object)[
-        'name' => 'Uriel John G. <br> <span class="italic">Chavez.</span>',
+        'name' => 'Uriel <br> <span class="italic">John.</span>',
         'title' => 'Information Technology Student',
         'bio' => 'Specialize in developing complex IT infrastructures and technical solutions that bridge high-performance engineering with modern digital efficiency.',
-        'image' => asset('image/uriell.jpg'),
+        'image' => asset('image/uriell.png'),
         'cv_link' => '#',
         'facebook_link' => '#',
         'instagram_link' => '#',
@@ -19,75 +19,146 @@
             'role' => 'Senior IT Specialist',
             'company' => 'METROPOLIS SYSTEMS',
             'year' => '2022 - PRES',
-            'description' => 'Leading the technical vision for high-scale IT infrastructures. Bridging the gap between stakeholders and technical teams.'
+            'description' => 'Leading the technical vision for high-scale IT infrastructures. Bridging the gap between stakeholders and technical teams.',
+            'color' => 'accent-purple',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 15h3"/><path d="M1 9h3"/><path d="M1 15h3"/></svg>'
+        ],
+        (object)[
+            'role' => 'Web Developer',
+            'company' => 'Freelance Professional',
+            'year' => '2020 - 2021',
+            'description' => 'Completed 30+ international website projects. Specialized in creating high-converting landing pages and e-commerce stores.',
+            'color' => 'accent-pink',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>'
         ]
     ];
 
     $certificates = [
         (object)[
             'title' => 'Cybersecurity',
-            'year' => '2025',
             'administered_by' => 'UNIVERSITY OF MINDANAO',
-            'language' => 'ENGLISH',
-            'image' => asset('image/cybersecurity.jpg')
+            'year' => '2025',
+            'color' => 'blue-500',
+            'image' => asset('image/cybersecurity.jpg'),
+            'verify_link' => '#'
         ],
         (object)[
             'title' => 'Network Security',
+            'administered_by' => 'UNIVERSITY OF MINDANAO',
             'year' => '2025',
-            'administered_by' => 'CISCO ACADEMY',
-            'language' => 'ENGLISH',
-            'image' => asset('image/networksecurity.jpg')
+            'color' => 'accent-purple',
+            'image' => asset('image/networksecurity.jpg'),
+            'verify_link' => '#'
         ],
         (object)[
             'title' => 'Networking',
-            'year' => '2024',
             'administered_by' => 'UNIVERSITY OF MINDANAO',
-            'language' => 'ENGLISH',
-            'image' => asset('image/networking.jpg')
+            'year' => '2024',
+            'color' => 'cyan-400',
+            'image' => asset('image/networking.jpg'),
+            'verify_link' => '#'
         ],
         (object)[
             'title' => 'HTML and CSS',
-            'year' => '2024',
             'administered_by' => 'UNIVERSITY OF MINDANAO',
-            'language' => 'ENGLISH',
-            'image' => asset('image/HTML CSS.jpg')
+            'year' => '2024',
+            'color' => 'accent-pink',
+            'image' => asset('image/HTML CSS.jpg'),
+            'verify_link' => '#'
         ],
         (object)[
             'title' => 'Databases',
-            'year' => '2024',
             'administered_by' => 'UNIVERSITY OF MINDANAO',
-            'language' => 'ENGLISH',
-            'image' => asset('image/database.jpg')
+            'year' => '2024',
+            'color' => 'emerald-400',
+            'image' => asset('image/database.jpg'),
+            'verify_link' => '#'
         ],
         (object)[
             'title' => 'Java',
-            'year' => '2022',
             'administered_by' => 'UNIVERSITY OF MINDANAO',
-            'language' => 'ENGLISH',
-            'image' => asset('image/java.jpg')
+            'year' => '2022',
+            'color' => 'orange-400',
+            'image' => asset('image/java.jpg'),
+            'verify_link' => '#'
+        ],
+    ];
+
+    $tools = [
+        (object)[
+            'name' => 'React JS',
+            'category' => 'Frontend Library',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+            'description' => 'I use React to build complex and interactive user interfaces. My experience includes using Hooks, Context API, and Redux for global state management.',
+            'proficiencies' => ['Hooks', 'Redux', 'Context API', 'Performance'],
+            'certificate' => 'React Developer Certificate - Meta Specialization',
+            'color' => 'accent-purple'
+        ],
+        (object)[
+            'name' => 'Tailwind CSS',
+            'category' => 'Utility-first Framework',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>',
+            'description' => 'I specialize in building highly responsive and visually stunning layouts using Tailwind CSS. Expertise in extending the theme and building multi-brand design systems.',
+            'proficiencies' => ['Responsive Design', 'JIT Engine', 'Custom Configurations', 'CSS Variables'],
+            'certificate' => 'Advanced CSS & Tailwind Mastery - Coursera',
+            'color' => 'accent-pink'
+        ],
+        (object)[
+            'name' => 'JavaScript ES6+',
+            'category' => 'Programming Language',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 2 6 6-6 6-6-6Z"/><path d="m14 10 6 6-6 6-6-6Z"/></svg>',
+            'description' => 'Strong foundation in modern JavaScript, focusing on performance, asynchronous programming, and clean code principles.',
+            'proficiencies' => ['Async/Await', 'ESM', 'DOM Manipulation', 'Functional Programming'],
+            'certificate' => 'JavaScript Algorithms and Data Structures - FreeCodeCamp',
+            'color' => 'yellow-500'
+        ],
+        (object)[
+            'name' => 'Figma',
+            'category' => 'UI/UX Design Tool',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v7H8.5A3.5 3.5 0 0 1 5 19.5z"/><path d="M8.5 16h3.5v7H8.5a3.5 3.5 0 1 1 0-7z"/></svg>',
+            'description' => 'Expert in hi-fi prototyping, design systems, and vector editing. Bridging the gap between conceptual design and frontend implementation.',
+            'proficiencies' => ['Prototyping', 'Auto-Layout', 'Design Systems', 'Variants'],
+            'certificate' => 'Google UX Design Professional Certificate - Coursera',
+            'color' => 'accent-purple'
+        ],
+        (object)[
+            'name' => 'Git & Github',
+            'category' => 'Version Control',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>',
+            'description' => 'Proficient in team collaboration environments using Git workflows, branching strategies, and CI/CD pipelines.',
+            'proficiencies' => ['Git Flow', 'Pull Requests', 'Actions', 'Resolving Conflicts'],
+            'certificate' => 'Version Control with Git - Atlassian University',
+            'color' => 'accent-pink'
+        ],
+        (object)[
+            'name' => 'Node & Next.js',
+            'category' => 'Fullstack Framework',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>',
+            'description' => 'Enthusiastic about Server-Side Rendering (SSR) and Static Site Generation (SSG). Building performant and SEO-friendly applications.',
+            'proficiencies' => ['App Router', 'API Routes', 'Server Components', 'Middleware'],
+            'certificate' => 'Next.js 13+ Advanced Patterns - Vercel Academy',
+            'color' => 'green-500'
         ],
     ];
 
     $projects = [
         (object)[
             'title' => 'Core Systems Architecture',
-            'subtitle' => 'Archive / 2024 • 01',
             'description' => 'A high-performance backend engine designed for large-scale enterprise data management.',
             'image' => 'https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=1000&auto=format&fit=crop'
         ],
         (object)[
             'title' => 'Cloud Workspace OS',
-            'subtitle' => 'Archive / 2024 • 02',
             'description' => 'Redefining for digital workspace through modular system architecture.',
             'image' => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop'
         ],
         (object)[
             'title' => 'Aether Protocol',
-            'subtitle' => 'Archive / 2024 • 03',
             'description' => 'A decentralized mesh protocol for low-latency network recovery.',
             'image' => 'https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1000&auto=format&fit=crop'
         ],
     ];
+
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
@@ -100,7 +171,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
         <!-- Tailwind Play CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -109,15 +180,17 @@
                 theme: {
                     extend: {
                         fontFamily: {
-                            serif: ['"Instrument Serif"', 'serif'],
-                            sans: ['"Instrument Sans"', 'sans-serif'],
+                            sans: ['Inter', 'sans-serif'],
                             outfit: ['Outfit', 'sans-serif'],
                         },
                         colors: {
-                            accent: '#0ef',
-                            bg: '#1f242d',
-                            'bg-lighter': '#323946',
+                            'dark-bg': '#0b011d',
+                            'accent-purple': '#8b5cf6',
+                            'accent-pink': '#ec4899',
                         },
+                        backgroundImage: {
+                            'primary-gradient': 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
+                        }
                     }
                 }
             }
@@ -127,85 +200,116 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         
         <style>
+            @keyframes slide-down {
+                from { transform: translateY(-100%); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+            @keyframes slide-up {
+                from { transform: translateY(100%); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+            @keyframes zoom-in {
+                from { transform: scale(0.9); opacity: 0; }
+                to { transform: scale(1); opacity: 1; }
+            }
+            .animate-slide-down { animation: slide-down 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+            .animate-slide-up { animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+            .animate-zoom { animation: zoom-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
             :root {
-                --accent: #0ef;
-                --bg: #1f242d;
-                --bg-lighter: #323946;
+                --primary-bg: #0b011d;
+                --accent-purple: #8b5cf6;
+                --accent-pink: #ec4899;
             }
             body { 
-                background-color: var(--bg);
+                background-color: var(--primary-bg);
                 color: #ffffff;
-                font-family: 'Instrument Sans', sans-serif;
+                font-family: 'Outfit', sans-serif;
                 overflow-x: hidden;
+                background-image: 
+                    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 40%);
+                background-attachment: fixed;
             }
-            .font-outfit { font-family: 'Outfit', sans-serif; }
-            .text-accent { color: var(--accent); }
-            .bg-accent { background-color: var(--accent); }
             
+            .text-gradient {
+                background: linear-gradient(to right, var(--accent-purple), var(--accent-pink));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .bg-accent-gradient {
+                background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+            }
+
             .glass-nav {
-                background: rgba(31, 36, 45, 0.85);
-                backdrop-filter: blur(15px);
-                border-bottom: 2px solid rgba(0, 238, 255, 0.1);
+                background: rgba(11, 1, 29, 0.7);
+                backdrop-filter: blur(20px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             }
 
-            .hex-frame {
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                background: var(--accent);
-                position: relative;
-                transition: 0.5s;
-                filter: drop-shadow(0 0 15px rgba(0, 238, 255, 0.3));
-            }
-            .hex-frame::before {
-                content: '';
-                position: absolute;
-                inset: 4px;
-                background: var(--bg);
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                z-index: 1;
-            }
-            .hex-frame img {
-                position: relative;
-                z-index: 2;
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                width: calc(100% - 12px);
-                height: calc(100% - 12px);
-                margin: 6px;
-                object-fit: cover;
-                transition: 0.5s;
-                filter: grayscale(20%);
-            }
-            .hex-frame:hover {
-                box-shadow: 0 0 50px var(--accent);
-                transform: scale(1.02);
-            }
-            .hex-frame:hover img {
-                filter: grayscale(0%);
-            }
-
-            .btn-neon {
-                background: var(--accent);
-                box-shadow: 0 0 10px rgba(0, 238, 255, 0.5);
-                transition: 0.5s;
-                border: none;
-                color: #000;
-                font-weight: 700;
-            }
-            .btn-neon:hover {
-                box-shadow: 0 0 30px var(--accent);
-                filter: brightness(1.1);
-            }
-            
-            .card-glass {
-                background: rgba(255, 255, 255, 0.03);
-                backdrop-filter: blur(10px);
-                border: 1px solid rgba(255, 255, 255, 0.05);
+            .btn-glow-purple {
+                border: 1px solid rgba(139, 92, 246, 0.5);
+                box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
                 transition: 0.3s;
             }
-            .card-glass:hover {
-                background: rgba(255, 255, 255, 0.05);
-                border-color: var(--accent);
-                transform: translateY(-5px);
+            .btn-glow-purple:hover {
+                box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+                background: rgba(139, 92, 246, 0.1);
             }
+
+            .btn-glow-pink {
+                border: 1px solid rgba(236, 72, 153, 0.5);
+                box-shadow: 0 0 15px rgba(236, 72, 153, 0.2);
+                transition: 0.3s;
+            }
+            .btn-glow-pink:hover {
+                box-shadow: 0 0 25px rgba(236, 72, 153, 0.4);
+                background: rgba(236, 72, 153, 0.1);
+            }
+
+            /* Typing animation cursor */
+            .typing-cursor::after {
+                content: '|';
+                animation: blink 1s step-end infinite;
+            }
+            @keyframes blink {
+                from, to { color: transparent }
+                50% { color: var(--accent-pink) }
+            }
+
+            .animate-pulse-subtle {
+                animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+            @keyframes pulse-subtle {
+                0%, 100% { opacity: 1; transform: scale(1); }
+                50% { opacity: 0.8; transform: scale(1.05); }
+            }
+
+            @keyframes pulse-green {
+                0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+                70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+                100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+            }
+            .animate-pulse-green {
+                animation: pulse-green 2s infinite;
+            }
+
+            @keyframes zoom {
+                from { transform: scale(0.9); opacity: 0; }
+                to { transform: scale(1); opacity: 1; }
+            }
+            .animate-zoom { animation: zoom 0.3s ease-out forwards; }
+
+            @keyframes float {
+                0%, 100% { transform: translateY(0) translateX(0) rotate(0); }
+                33% { transform: translateY(-10px) translateX(5px) rotate(1deg); }
+                66% { transform: translateY(5px) translateX(-5px) rotate(-1deg); }
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+        </style>
 
 
         </style>
@@ -213,37 +317,47 @@
     <body class="antialiased selection:bg-accent selection:text-white">
         
         <!-- Navbar -->
-        <header class="fixed top-0 left-0 w-full px-6 md:px-[9%] py-7 flex justify-between items-center z-50 glass-nav">
-            <a href="#" class="text-2xl font-bold text-white cursor-default">Portfolio<span class="text-accent">.</span></a>
+        <header class="fixed top-0 left-0 w-full px-6 md:px-[9%] py-6 flex justify-between items-center z-50 glass-nav">
+            <div class="flex flex-col leading-none">
+                <a href="#" class="text-xl font-bold text-white flex items-center gap-1">
+                    <span class="text-accent-pink">&lt;</span>JohnDev<span class="text-accent-pink">/&gt;</span>
+                </a>
+                <span class="text-[8px] tracking-[0.3em] font-bold text-white/50 mt-1 uppercase">Information Technology Student</span>
+            </div>
             
             <!-- Hamburger Menu Button (Mobile Only) -->
-            <button id="menu-btn" class="md:hidden text-white hover:text-accent transition">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <button id="menu-btn" class="md:hidden text-white hover:text-accent-pink transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8">
-                <a href="#home" class="text-lg font-medium text-white hover:text-accent transition">Home</a>
-                <a href="#about" class="text-lg font-medium text-white hover:text-accent transition">About</a>
-                <a href="#certificates" class="text-lg font-medium text-white hover:text-accent transition">Certificates</a>
-                <a href="#projects" class="text-lg font-medium text-white hover:text-accent transition">Portfolio</a>
-                <a href="#experience" class="text-lg font-medium text-white hover:text-accent transition">Journey</a>
+                <a href="#home" class="text-sm font-medium text-white/70 hover:text-white transition py-2 px-4 rounded-full bg-accent-purple/20 border border-accent-purple/30">Home</a>
+                <a href="#about" class="text-sm font-medium text-white/70 hover:text-white transition">About</a>
+                <a href="#edu" class="text-sm font-medium text-white/70 hover:text-white transition">Education</a>
+                <a href="#skills" class="text-sm font-medium text-white/70 hover:text-white transition">Skills</a>
+                <a href="#projects" class="text-sm font-medium text-white/70 hover:text-white transition">Projects</a>
+                <a href="#testimonial" class="text-sm font-medium text-white/70 hover:text-white transition">Testimonial</a>
                 
-                <div class="flex items-center gap-4 ml-4">
-                    <a href="#contact" class="px-7 py-2 btn-neon rounded-full text-sm uppercase tracking-wider">
-                        Contact
+                <div class="flex items-center gap-6 ml-4">
+                    <button class="text-white hover:text-accent-pink transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+                    </button>
+                    <a href="#contact" class="px-6 py-2 border border-accent-purple rounded-full text-sm font-semibold hover:bg-accent-purple transition shadow-[0_0_15px_rgba(139,92,246,0.3)]">
+                        Contact Me
                     </a>
                 </div>
             </nav>
 
             <!-- Mobile Nav Container -->
-            <div id="mobile-menu" class="fixed top-[88px] left-0 w-full bg-bg/95 backdrop-blur-xl border-b border-accent/20 flex flex-col items-center py-10 gap-6 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 md:hidden z-40">
-                <a href="#home" class="text-xl font-medium text-white hover:text-accent transition" onclick="toggleMenu()">Home</a>
-                <a href="#about" class="text-xl font-medium text-white hover:text-accent transition" onclick="toggleMenu()">About</a>
-                <a href="#certificates" class="text-xl font-medium text-white hover:text-accent transition" onclick="toggleMenu()">Certificates</a>
-                <a href="#projects" class="text-xl font-medium text-white hover:text-accent transition" onclick="toggleMenu()">Portfolio</a>
-                <a href="#experience" class="text-xl font-medium text-white hover:text-accent transition" onclick="toggleMenu()">Journey</a>
-                <a href="#contact" class="px-10 py-3 btn-neon rounded-full text-sm uppercase tracking-wider" onclick="toggleMenu()">Contact</a>
+            <div id="mobile-menu" class="fixed top-[88px] left-0 w-full bg-dark-bg/95 backdrop-blur-xl border-b border-white/5 flex flex-col items-center py-10 gap-6 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 md:hidden z-40">
+                <a href="#home" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Home</a>
+                <a href="#about" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">About</a>
+                <a href="#edu" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Education</a>
+                <a href="#skills" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Skills</a>
+                <a href="#projects" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Projects</a>
+                <a href="#testimonial" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Testimonial</a>
+                <a href="#contact" class="px-8 py-3 bg-accent-purple rounded-full text-sm font-bold shadow-lg" onclick="toggleMenu()">Contact Me</a>
             </div>
         </header>
 
@@ -263,104 +377,218 @@
         </script>
 
         <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen flex items-center bg-bg px-6 md:px-[9%] py-10">
-            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 lg:items-center gap-12 pt-12 md:pt-20">
-                <div class="space-y-4 md:space-y-6 text-center lg:text-left order-2 lg:order-1">
-                    <h3 class="text-xl md:text-3xl font-bold text-white">Hello, It's Me</h3>
-                    <h1 class="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight text-white mb-2">{!! $profile->name !!}</h1>
-                    <h3 class="text-xl md:text-3xl font-bold text-white">And I'm a <span class="text-accent">{{ $profile->title }}</span></h3>
-                    
-                    <p class="text-base md:text-lg text-white/70 max-w-xl leading-relaxed mx-auto lg:mx-0">
-                        {{ $profile->bio }}
+        <section id="home" class="relative min-h-screen flex items-center bg-dark-bg px-6 md:px-[9%] py-20 overflow-hidden">
+            <!-- Background Nebula Effect -->
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-purple/10 to-transparent pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 items-center gap-12 relative z-10">
+                <div class="space-y-10 order-2 lg:order-1">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-purple/10 border border-accent-purple/20 text-[10px] font-bold tracking-widest text-white/80 uppercase animate-pulse-subtle">
+                        <span class="w-2 h-2 rounded-full bg-accent-purple shadow-[0_0_8px_rgba(139,92,246,0.8)]"></span>
+                        Open to Work 2025
+                    </div>
+
+                    <!-- Main Heading -->
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-2xl">
+                            Creative Solutions <br>
+                            <span class="text-gradient">Digital World</span>
+                        </h1>
+                        
+                        <div class="text-lg md:text-xl text-white/70 font-medium">
+                            I am a <span id="typing-text" class="text-white typing-cursor font-bold"></span>
+                        </div>
+                    </div>
+
+                    <p class="text-sm md:text-base text-white/50 max-w-lg leading-relaxed">
+                        Transforming complex ideas into modern, responsive, and interactive websites that help your business grow faster.
                     </p>
 
-                    <div class="flex justify-center lg:justify-start gap-4 mb-4 md:mb-8">
-                        @if($profile->facebook_link)
-                        <a href="{{ $profile->facebook_link }}" target="_blank" class="w-10 h-10 md:w-11 md:h-11 border-2 border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-black hover:shadow-[0_0_20px_#0ef] transition duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-6">
+                        <a href="#projects" class="px-8 py-4 bg-accent-gradient rounded-xl text-sm font-bold flex items-center gap-2 hover:scale-105 transition shadow-[0_0_20px_rgba(236,72,153,0.3)]">
+                            See Portfolio
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
-                        @endif
-                        @if($profile->instagram_link)
-                        <a href="{{ $profile->instagram_link }}" target="_blank" class="w-10 h-10 md:w-11 md:h-11 border-2 border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-black hover:shadow-[0_0_20px_#0ef] transition duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <a href="#about" class="px-8 py-4 border border-white/10 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-white/5 transition">
+                            About Me
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         </a>
-                        @endif
-                        @if($profile->linkedin_link)
-                        <a href="{{ $profile->linkedin_link }}" target="_blank" class="w-10 h-10 md:w-11 md:h-11 border-2 border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-black hover:shadow-[0_0_20px_#0ef] transition duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        @endif
-                        @if($profile->github_link)
-                        <a href="{{ $profile->github_link }}" target="_blank" class="w-10 h-10 md:w-11 md:h-11 border-2 border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-black hover:shadow-[0_0_20px_#0ef] transition duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-                        @endif
                     </div>
 
-                    <a href="{{ $profile->cv_link ?? '#' }}" class="inline-block px-8 py-3 md:px-10 md:py-3 btn-neon rounded-full text-base md:text-lg">Download CV</a>
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-3 gap-8 pt-6 border-t border-white/5">
+                        <div class="space-y-1">
+                            <h4 class="text-2xl md:text-3xl font-bold text-white">5+</h4>
+                            <p class="text-[8px] tracking-[0.2em] font-black text-white/40 uppercase">Experience</p>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="text-2xl md:text-3xl font-bold text-white">50+</h4>
+                            <p class="text-[8px] tracking-[0.2em] font-black text-white/40 uppercase">Projects</p>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="text-2xl md:text-3xl font-bold text-white">20+</h4>
+                            <p class="text-[8px] tracking-[0.2em] font-black text-white/40 uppercase">Clients</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="flex justify-center lg:justify-end order-1 lg:order-2">
-                    <div class="hex-frame w-64 h-64 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px]">
-                        <img src="{{ $profile->image ?? asset('image/uriell.jpg') }}" alt="{{ strip_tags($profile->name) }}">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="bg-bg-lighter py-20 md:py-32 px-6 md:px-[9%] border-y border-white/5">
-            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 lg:items-center gap-12 md:gap-16 lg:gap-32">
-                <div class="flex justify-center lg:justify-start order-2 lg:order-1 text-center lg:text-left">
-                    <div class="hex-frame w-56 h-56 sm:w-72 sm:h-72 md:w-[400px] md:h-[400px]">
-                        <img src="{{ $profile->image ?? asset('image/uriell.jpg') }}" alt="About {{ strip_tags($profile->name) }}">
-                    </div>
-                </div>
-
-                <div class="space-y-6 md:space-y-8 order-1 lg:order-2 text-center lg:text-left">
-                    <h2 class="text-4xl md:text-6xl font-bold text-white mb-4">About <span class="text-accent">Me</span></h2>
-                    <h3 class="text-xl md:text-2xl font-bold text-white tracking-wide">{{ $profile->title }} Specialist!</h3>
-                    
-                    <div class="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg leading-relaxed italic font-medium">
-                        <p>{{ $profile->bio }}</p>
-                    </div>
-                    <a href="#" class="inline-block px-8 py-3 md:px-10 md:py-3 btn-neon rounded-full text-base md:text-lg mt-4">Read More</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Credentials Section (Certificates) - SHORTER LAYOUT -->
-        <section id="certificates" class="bg-bg py-20 md:py-32 px-6 md:px-[9%]">
-            <div class="max-w-7xl mx-auto w-full text-center space-y-12 md:space-y-16">
-                <h2 class="text-4xl md:text-6xl font-bold text-white"><span class="text-white">ITS</span> <span class="text-accent">Certificates</span></h2>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
-                    @foreach($certificates as $certificate)
-                    <div onclick="zoomCertificate('{{ $certificate->image ?? asset('image/uriell.jpg') }}')" class="relative rounded-[1.5rem] overflow-hidden group border border-white/10 hover:border-accent transition duration-500 shadow-xl h-48 bg-white/[0.03] backdrop-blur-xl cursor-pointer">
-                        <!-- Background Image -->
-                        <img src="{{ $certificate->image ?? asset('image/uriell.jpg') }}" alt="{{ $certificate->title }}" class="w-full h-full object-contain filter grayscale-0 brightness-100 group-hover:brightness-[0.1] group-hover:blur-[2px] group-hover:scale-105 transition duration-700">
+                <div class="relative order-1 lg:order-2 flex justify-center items-center">
+                    <!-- Hero Image Container -->
+                    <div class="relative w-full max-w-lg aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ $profile->image ?? asset('image/uriell.jpg') }}" alt="Hizkia" class="w-full h-full object-cover grayscale brightness-75">
                         
-                        <!-- Hover Overlay Details -->
-                        <div class="absolute inset-0 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-500 bg-black/40 backdrop-blur-md">
-                            <p class="text-[8px] uppercase tracking-[0.2em] text-accent font-black mb-1 drop-shadow-md">ITS Certificate</p>
-                            <h3 class="text-sm font-serif italic font-bold text-white leading-tight mb-2 line-clamp-2 drop-shadow-md">{{ $certificate->title }}</h3>
-                            
-                            <div class="grid grid-cols-2 gap-2 mb-2 border-t border-accent/30 pt-2">
-                                <div class="space-y-0.5">
-                                    <p class="text-[6px] uppercase tracking-widest text-accent/80 font-bold">Provider</p>
-                                    <p class="text-[8px] text-white font-bold uppercase truncate shadow-black drop-shadow-sm">{{ $certificate->administered_by ?? 'UNIVERSITY' }}</p>
+                        <!-- Decorative Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent"></div>
+                    </div>
+
+                    <!-- Floating Terminal Card -->
+                    <div class="absolute -bottom-10 -left-10 md:-left-20 w-72 p-6 rounded-2xl bg-[#1e1e2e]/90 backdrop-blur-xl border border-white/5 shadow-2xl animate-float" style="animation-delay: 0.5s;">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-2 h-2 rounded-full bg-[#ff5f56]"></div>
+                            <div class="w-2 h-2 rounded-full bg-[#ffbd2e]"></div>
+                            <div class="w-2 h-2 rounded-full bg-[#27c93f]"></div>
+                            <span class="text-[8px] text-white/30 ml-2 font-mono">app.js</span>
+                        </div>
+                        <div class="font-mono text-[10px] leading-relaxed">
+                            <span class="text-accent-purple">const</span> <span class="text-accent-pink">student</span> = {<br>
+                            &nbsp;&nbsp;name: <span class="text-green-400">"Uriel John"</span>,<br>
+                            &nbsp;&nbsp;role: <span class="text-green-400">"IT Student"</span><br>
+                            };
+                        </div>
+                        <div class="absolute bottom-4 right-4 text-white/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-y border-white/5 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto w-full relative z-10">
+                <div class="text-center space-y-2 mb-16">
+                    <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">Overview</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">About The <span class="text-gradient">Developer</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Who Am I Card -->
+                    <div class="md:col-span-2 md:row-span-2 bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 hover:border-accent-purple/30 transition duration-500">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-purple/20 flex items-center justify-center text-accent-purple">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Who Am I?</h3>
+                        </div>
+                        <div class="space-y-4 text-white/60 leading-relaxed text-sm md:text-base">
+                            <p>
+                                Hi! I'm <span class="text-white font-bold">Uriel John</span>, a dedicated <span class="text-accent-pink font-bold">IT Student</span> based in the Philippines. 
+                                I have a deep passion for creating digital interfaces that are not only functional but also visually stunning. 
+                                With a background in Technical Information, I bridge the gap between code logic and design aesthetics.
+                            </p>
+                            <p>
+                                My journey in tech is driven by curiosity and the desire to build things that make an impact. 
+                                Whether it's architecting complex systems or fine-tuning micro-interactions, I strive for excellence in every project.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Stats Card -->
+                    <div class="bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 flex flex-col justify-center items-center text-center hover:border-accent-purple/30 transition duration-500">
+                        <div class="space-y-2 mb-8">
+                            <h4 class="text-5xl font-bold text-gradient">2+</h4>
+                            <p class="text-[10px] tracking-[0.2em] font-black text-white/40 uppercase">Years Experience</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-5xl font-bold text-white">15+</h4>
+                            <p class="text-[10px] tracking-[0.2em] font-black text-white/40 uppercase">Projects Done</p>
+                        </div>
+                    </div>
+
+                    <!-- Current Focus Card -->
+                    <div class="bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 hover:border-accent-pink/30 transition duration-500">
+                        <h3 class="text-lg font-bold text-white mb-4">Current Focus</h3>
+                        <p class="text-white/60 text-sm mb-6">Deep diving into <span class="text-accent-purple">Web3</span> & <span class="text-accent-pink">AI Integration</span>.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-purple/10 border border-accent-purple/20 rounded-md text-[10px] font-bold text-accent-purple">Laravel</span>
+                            <span class="px-3 py-1 bg-accent-pink/10 border border-accent-pink/20 rounded-md text-[10px] font-bold text-accent-pink">Cloud</span>
+                        </div>
+                    </div>
+
+                    <!-- Base Station Card -->
+                    <div class="bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 flex items-center justify-between hover:border-green-500/30 transition duration-500">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-bold text-white">Base Station</h3>
+                            <p class="text-white/40 text-[10px] font-bold uppercase tracking-widest">Davao City, PH (GMT+8)</p>
+                            <div class="flex items-center gap-2 mt-4">
+                                <span class="relative flex h-2 w-2">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                                </span>
+                                <span class="text-[10px] font-bold text-green-500 uppercase tracking-widest">Open for Work</span>
+                            </div>
+                        </div>
+                        <div class="text-white/10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                    </div>
+
+                    <!-- Core Stack Card -->
+                    <div class="md:col-span-2 bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 hover:border-accent-purple/30 transition duration-500">
+                        <h3 class="text-lg font-bold text-white mb-6">Core Stack</h3>
+                        <div class="flex flex-wrap items-center gap-8">
+                            <div class="flex items-center gap-3 group">
+                                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-accent-purple group-hover:text-white transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"></path><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path><path d="M15 6a9 9 0 0 0-9 9"></path></svg>
                                 </div>
-                                <div class="space-y-0.5 text-right">
-                                    <p class="text-[6px] uppercase tracking-widest text-accent/80 font-bold">Language</p>
-                                    <p class="text-[8px] text-white font-bold uppercase truncate shadow-black drop-shadow-sm">{{ $certificate->language ?? 'ENGLISH' }}</p>
+                                <span class="text-xs font-bold text-white/50 uppercase tracking-widest">PHP</span>
+                            </div>
+                            <div class="flex items-center gap-3 group">
+                                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-accent-pink group-hover:text-white transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </div>
+                                <span class="text-xs font-bold text-white/50 uppercase tracking-widest">Tailwind</span>
+                            </div>
+                            <div class="flex items-center gap-3 group">
+                                <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-blue-400 group-hover:text-white transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                                </div>
+                                <span class="text-xs font-bold text-white/50 uppercase tracking-widest">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edu" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
+            <div class="max-w-7xl mx-auto w-full space-y-16">
+                <div class="text-center space-y-2">
+                    <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">My Journey</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">Education & <span class="text-gradient">Experience</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    @foreach($experiences as $exp)
+                    <div class="group relative bg-[#1e1e2e]/40 border border-white/5 rounded-[2.5rem] p-10 hover:border-{{ $exp->color }}/50 hover:shadow-[0_0_50px_rgba(139,92,246,0.1)] transition-all duration-700 overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-{{ $exp->color }}/5 rounded-full blur-3xl group-hover:bg-{{ $exp->color }}/10 transition-colors duration-700"></div>
+                        
+                        <div class="relative z-10 space-y-10">
+                            <div class="flex justify-between items-start">
+                                <span class="inline-block px-5 py-2 rounded-2xl bg-{{ $exp->color }}/10 border border-{{ $exp->color }}/10 text-[10px] font-black text-{{ $exp->color }} uppercase tracking-[0.3em]">{{ $exp->year }}</span>
+                                <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-white/20 group-hover:text-{{ $exp->color }} group-hover:bg-{{ $exp->color }}/10 transition-all duration-700">
+                                    {!! $exp->icon !!}
                                 </div>
                             </div>
-                            
-                            <div class="flex justify-between items-center w-full">
-                                <span class="text-[10px] text-accent font-black tracking-widest drop-shadow-md">{{ $certificate->year }}</span>
-                                <div class="w-6 h-6 bg-accent/10 border border-accent/20 rounded-md flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-black transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+
+                            <div class="space-y-4">
+                                <div class="space-y-1">
+                                    <h3 class="text-2xl font-bold text-white group-hover:text-{{ $exp->color }} transition duration-500">{{ $exp->role }}</h3>
+                                    <p class="text-white/30 text-xs font-bold uppercase tracking-[0.2em]">{{ $exp->company }}</p>
                                 </div>
+                                <p class="text-white/50 text-sm leading-relaxed">{{ $exp->description }}</p>
                             </div>
                         </div>
                     </div>
@@ -369,22 +597,45 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="bg-bg-lighter py-20 md:py-32 px-6 md:px-[9%] border-y border-white/5">
-            <div class="max-w-7xl mx-auto w-full text-center space-y-12 md:space-y-16">
-                <h2 class="text-4xl md:text-6xl font-bold text-white">Latest <span class="text-accent">Projects</span></h2>
+        <!-- Certificates Section -->
+        <section id="certs" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto w-full space-y-20">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                    <div class="space-y-4">
+                        <p class="text-accent-pink text-xs font-bold tracking-[0.5em] uppercase">Verified Expertise</p>
+                        <h2 class="text-4xl md:text-6xl font-black text-white leading-none">The <span class="text-gradient">Vault</span></h2>
+                    </div>
+                    <p class="text-white/30 text-sm max-w-xs font-medium leading-relaxed">A collection of industry-recognized certifications and technical validations.</p>
+                </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    @foreach($projects as $project)
-                    <div class="relative rounded-[2.5rem] overflow-hidden group border border-white/10 hover:border-accent transition duration-500 shadow-2xl h-80 bg-bg">
-                        <img src="{{ $project->image ?? asset('image/uriell.jpg') }}" alt="{{ $project->title }}" class="w-full h-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-110 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-10 transform translate-y-4 group-hover:translate-y-0 transition duration-500">
-                            <h3 class="text-2xl font-bold text-white mb-2">{{ $project->title }}</h3>
-                            <p class="text-white/70 text-sm mb-6 line-clamp-2">{{ $project->description }}</p>
-                            <div class="flex items-center justify-start">
-                                <a href="#" class="w-11 h-11 bg-accent rounded-2xl flex items-center justify-center text-black hover:scale-110 transition duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                </a>
+                    @foreach($certificates as $cert)
+                    <div class="group relative bg-black/40 border border-white/5 rounded-[3rem] p-6 hover:border-{{ $cert->color }}/30 transition-all duration-700 cursor-pointer overflow-hidden" onclick="openZoom('{{ $cert->image }}', '{{ $cert->title }}')">
+                        <!-- Decorative Background Gradient -->
+                        <div class="absolute inset-0 bg-{{ $cert->color }}/0 group-hover:bg-{{ $cert->color }}/5 transition-colors duration-700"></div>
+                        
+                        <div class="relative space-y-6">
+                            <!-- Certificate Image Container -->
+                            <div class="relative aspect-[4/3] rounded-[2rem] overflow-hidden border border-white/5 group-hover:border-{{ $cert->color }}/20 transition-all duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                                <img src="{{ $cert->image }}" alt="{{ $cert->title }}" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition duration-1000">
+                                
+                                <div class="absolute inset-0 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700">
+                                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-xl flex items-center justify-center text-white scale-90 group-hover:scale-100 hover:bg-{{ $cert->color }} transition duration-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-4 pb-4 space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-[10px] font-black text-{{ $cert->color }} uppercase tracking-[0.2em]">{{ $cert->year }}</span>
+                                    <span class="w-1.5 h-1.5 rounded-full bg-{{ $cert->color }}/40 group-hover:scale-150 transition-transform duration-700 shadow-[0_0_10px_{{ $cert->color }}]"></span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h3 class="text-xl font-bold text-white group-hover:text-{{ $cert->color }} transition duration-500">{{ $cert->title }}</h3>
+                                    <p class="text-white/30 text-[9px] font-bold uppercase tracking-widest">{{ $cert->administered_by }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -393,120 +644,318 @@
             </div>
         </section>
 
-        <!-- Journey Section -->
-        <section id="experience" class="bg-bg py-20 md:py-32 px-6 md:px-[9%] border-t border-white/5">
-            <div class="max-w-7xl mx-auto w-full">
-                <div class="grid lg:grid-cols-12 gap-12 md:gap-16">
-                    <!-- Left Sidebar Header -->
-                    <div class="lg:col-span-4 space-y-6 md:space-y-8 lg:sticky lg:top-40 h-fit text-center lg:text-left">
-                        <p class="text-[11px] uppercase tracking-[0.5em] text-accent font-bold">The Journey</p>
-                        <h2 class="text-4xl md:text-6xl font-serif italic text-white leading-tight">Building the <br class="hidden lg:block"> future through <br class="hidden lg:block"> technology.</h2>
-                    </div>
+        <section id="skills" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
+            <div class="max-w-7xl mx-auto w-full space-y-16">
+                <div class="text-center space-y-2">
+                    <p class="text-accent-pink text-xs font-bold tracking-[0.4em] uppercase">Tech Stack</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">Tools & <span class="text-gradient">Workflow</span></h2>
+                </div>
 
-                    <!-- Experience List -->
-                    <div class="lg:col-span-8 space-y-12 md:space-y-20">
-                        @foreach($experiences as $experience)
-                        <div class="grid md:grid-cols-12 gap-4 md:gap-8 group">
-                            <div class="md:col-span-3">
-                                <p class="text-sm font-medium text-white/40 group-hover:text-accent transition duration-500 pt-2">{{ $experience->year }}</p>
-                            </div>
-                            <div class="md:col-span-9 space-y-4">
-                                <div class="flex flex-col md:flex-row justify-between md:items-baseline gap-2">
-                                    <h3 class="text-2xl md:text-3xl font-bold text-white group-hover:text-accent transition duration-500">{{ $experience->role }}</h3>
-                                    <span class="text-[10px] uppercase tracking-widest text-white/30 font-bold group-hover:text-white/60 transition duration-500">{{ $experience->company }}</span>
-                                </div>
-                                <div class="border-l border-white/10 pl-6 md:pl-8 transition duration-500 group-hover:border-accent/30 py-2">
-                                    <p class="text-white/50 leading-relaxed italic font-medium text-base md:text-lg">
-                                        {{ $experience->description }}
-                                    </p>
-                                </div>
-                            </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    @foreach($tools as $tool)
+                    <div onclick="openToolModal({{ json_encode($tool) }})" class="group bg-[#1e1e2e]/30 border border-white/5 p-8 rounded-3xl flex items-center gap-6 hover:border-{{ $tool->color }}/30 transition-all duration-300 cursor-pointer">
+                        <div class="w-14 h-14 rounded-2xl bg-{{ $tool->color }}/10 flex items-center justify-center text-{{ $tool->color }} group-hover:bg-{{ $tool->color }} group-hover:text-{{ $tool->color == 'yellow-500' ? 'black' : 'white' }} transition-all duration-300">
+                            {!! $tool->icon !!}
                         </div>
-                        @endforeach
+                        <div class="space-y-1">
+                            <h3 class="font-bold text-white text-lg">{{ $tool->name }}</h3>
+                            <p class="text-white/40 text-xs font-bold uppercase tracking-wider">{{ $tool->category }}</p>
+                        </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-bg-lighter py-20 md:py-32 px-6 md:px-[9%] border-t border-white/5">
-            <div class="max-w-7xl mx-auto w-full">
-                <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-                    <div class="space-y-12 md:space-y-20 text-center lg:text-left">
-                        <div class="space-y-6 md:space-y-8">
-                            <p class="text-[11px] uppercase tracking-[0.5em] text-accent font-bold">Establish Contact</p>
-                            <h2 class="text-5xl md:text-7xl font-serif italic text-white leading-tight">Let's create the <br class="hidden lg:block"> extraordinary.</h2>
-                        </div>
+        <!-- Projects Section (Selected Works) -->
+        <section id="projects" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
+            <div class="max-w-7xl mx-auto w-full space-y-16">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                    <div class="space-y-2">
+                        <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">Portfolio</p>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white">Selected <span class="text-gradient">Works</span></h2>
+                    </div>
+                    <a href="#" class="text-sm font-bold text-white/40 hover:text-white transition flex items-center gap-2 group">
+                        Lihat Semua
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
 
-                        <div class="space-y-8 md:space-y-12">
-                            <div class="space-y-4">
-                                <p class="text-[10px] uppercase tracking-[0.5em] text-white/30 font-bold">The Studio</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    @foreach($projects as $project)
+                    <div class="group relative bg-[#1e1e2e]/20 border border-white/5 rounded-[2rem] overflow-hidden hover:border-accent-purple/30 transition-all duration-500">
+                        <div class="aspect-[16/10] overflow-hidden">
+                            <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition duration-1000">
+                        </div>
+                        
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                            <div class="flex justify-between items-end">
                                 <div class="space-y-2">
-                                    <p class="text-lg md:text-xl text-white font-medium hover:text-accent transition cursor-pointer break-all">{{ $profile->email }}</p>
-                                    <p class="text-lg md:text-xl text-white font-medium">{{ $profile->phone }}</p>
-                                    <p class="text-lg md:text-xl text-white font-medium">{{ $profile->address }}</p>
+                                    <h3 class="text-2xl font-bold text-white mb-2">{{ $project->title }}</h3>
+                                    <p class="text-white/50 text-sm max-w-md line-clamp-2">{{ $project->description }}</p>
+                                </div>
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white backdrop-blur-md group-hover:bg-accent-purple transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="relative pt-4 md:pt-12">
-                        <form action="#" class="space-y-12 md:space-y-16">
-                            <div class="grid md:grid-cols-2 gap-12 md:gap-16">
-                                <div class="relative group">
-                                    <input type="text" id="name" required class="w-full bg-bg-lighter border-b border-white/10 py-4 focus:outline-none focus:border-accent transition-colors peer text-white placeholder-transparent">
-                                    <label for="name" class="absolute left-0 top-4 text-[11px] uppercase tracking-widest text-white/30 font-black transition-all peer-focus:-top-4 peer-focus:text-accent peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-accent">Full Name</label>
-                                </div>
-                                <div class="relative group">
-                                    <input type="text" id="office" required class="w-full bg-bg-lighter border-b border-white/10 py-4 focus:outline-none focus:border-accent transition-colors peer text-white placeholder-transparent">
-                                    <label for="office" class="absolute left-0 top-4 text-[11px] uppercase tracking-widest text-white/30 font-black transition-all peer-focus:-top-4 peer-focus:text-accent peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-accent">Digital Office</label>
-                                </div>
-                            </div>
-                            <div class="relative group">
-                                <textarea id="message" rows="1" required class="w-full bg-bg-lighter border-b border-white/10 py-4 focus:outline-none focus:border-accent transition-colors peer text-white placeholder-transparent resize-none overflow-hidden"></textarea>
-                                <label for="message" class="absolute left-0 top-4 text-[11px] uppercase tracking-widest text-white/30 font-black transition-all peer-focus:-top-4 peer-focus:text-accent peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-accent">Brief Outline</label>
-                            </div>
-
-                            <div class="flex justify-center lg:justify-end pt-8">
-                                <button type="submit" class="group flex items-center gap-6 bg-white text-black px-10 py-4 md:px-12 md:py-5 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-accent transition-all duration-500 overflow-hidden relative">
-                                    <span class="relative z-10">Initiate Brief</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 transition-transform group-hover:translate-x-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
+
 
         <!-- Footer -->
-        <footer class="bg-bg py-10 px-[9%] border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 relative">
-            <p class="text-white/50 text-sm">Copyright &copy; {{ date('Y') }} by Uriel Chavez | All Rights Reserved.</p>
-            
-            <a href="#home" class="w-11 h-11 bg-accent rounded-xl flex items-center justify-center text-black hover:shadow-[0_0_20px_#0ef] transition duration-500">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
-            </a>
+        <footer class="bg-dark-bg py-12 px-[9%] border-t border-white/5">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex flex-col items-center md:items-start leading-none">
+                    <a href="#" class="text-xl font-bold text-white flex items-center gap-1">
+                        <span class="text-accent-pink">&lt;</span>JohnDev<span class="text-accent-pink">/&gt;</span>
+                    </a>
+                    <p class="text-[8px] tracking-[0.3em] font-bold text-white/30 mt-2 uppercase">Crafting Digital Excellence</p>
+                </div>
+
+                <p class="text-white/30 text-xs">Copyright &copy; {{ date('Y') }} JohnDev. All rights Reserved.</p>
+                
+                <div class="flex items-center gap-4">
+                    <a href="#" class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:text-accent-pink hover:border-accent-pink transition duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:text-accent-pink hover:border-accent-pink transition duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:text-accent-pink hover:border-accent-pink transition duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
         </footer>
 
 
         <!-- Certificate Zoom Modal -->
-        <div id="certificateZoom" class="fixed inset-0 z-[150] hidden flex items-center justify-center p-4">
+        <div id="certificateZoom" class="fixed inset-0 z-[150] hidden flex flex-col items-center justify-center p-4">
             <div class="absolute inset-0 bg-black/95 backdrop-blur-xl" onclick="closeZoom()"></div>
-            <div class="relative max-w-5xl w-full h-[85vh] flex items-center justify-center">
-                <button onclick="closeZoom()" class="absolute -top-12 right-0 text-white/50 hover:text-white transition group flex items-center gap-2">
-                    <span class="text-[10px] uppercase font-black tracking-widest">Close Esc</span>
+            
+            <!-- Drive-style Header -->
+            <div class="relative w-full max-w-7xl flex items-center justify-between px-8 py-6 z-[160] translate-y-[-100%] animate-slide-down">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-accent-pink">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                    </div>
+                    <div>
+                        <h4 id="zoomTitle" class="text-sm font-bold text-white tracking-wide">Certificate_Preview.jpg</h4>
+                        <p class="text-[8px] text-white/30 uppercase tracking-[0.2em]">Verified Credential System</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <button onclick="closeZoom()" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/50 hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative max-w-5xl w-full h-[75vh] flex items-center justify-center z-[160]">
+                <img id="zoomedImage" src="" alt="Certificate" class="max-w-full max-h-full object-contain shadow-[0_30px_100px_rgba(0,0,0,0.5)] rounded-2xl animate-zoom">
+            </div>
+
+            <!-- Bottom Action Bar -->
+            <div class="relative z-[160] mt-10 translate-y-[100%] animate-slide-up">
+                <a id="zoomDownload" href="#" download class="px-8 py-3 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-black text-white hover:bg-white hover:text-black transition duration-500 uppercase tracking-widest flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Certificate
+                </a>
+            </div>
+        </div>
+
+        <!-- Tool Detail Modal -->
+        <div id="toolModal" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4">
+            <div class="absolute inset-0 bg-black/80 backdrop-blur-md" onclick="closeToolModal()"></div>
+            <div class="relative bg-[#0b011d] border border-white/10 rounded-[2.5rem] w-full max-w-2xl overflow-hidden shadow-2xl animate-zoom">
+                <!-- Close Button -->
+                <button onclick="closeToolModal()" class="absolute top-8 right-8 text-white/40 hover:text-white transition group">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
-                <img id="zoomedImage" src="" alt="Certificate" class="max-w-full max-h-full object-contain shadow-2xl rounded-lg animate-zoom">
+
+                <div class="p-8 md:p-12 space-y-10">
+                    <!-- Header -->
+                    <div class="flex items-center gap-6">
+                        <div id="modalIcon" class="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                            <!-- Icon will be injected here -->
+                        </div>
+                        <div>
+                            <h3 id="modalName" class="text-3xl font-bold text-white tracking-tight"></h3>
+                            <p id="modalCategory" class="text-xs font-bold text-white/40 uppercase tracking-[0.2em] mt-1"></p>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="flex border-b border-white/5 relative">
+                        <button onclick="switchToolTab('overview')" id="tab-overview" class="flex-1 py-4 text-sm font-bold tracking-widest uppercase transition relative group text-white">
+                            Overview
+                            <div class="absolute bottom-0 left-0 w-full h-[2px] bg-accent-purple shadow-[0_0_8px_rgba(139,92,246,0.8)] scale-x-100 transition-transform duration-300 origin-left" id="tab-indicator-overview"></div>
+                        </button>
+                        <button onclick="switchToolTab('certificate')" id="tab-certificate" class="flex-1 py-4 text-sm font-bold tracking-widest uppercase transition relative group text-white/40 hover:text-white">
+                            Certificate
+                            <div class="absolute bottom-0 left-0 w-full h-[2px] bg-accent-purple shadow-[0_0_8px_rgba(139,92,246,0.8)] scale-x-0 transition-transform duration-300 origin-left" id="tab-indicator-certificate"></div>
+                        </button>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="min-h-[200px]">
+                        <!-- Overview Content -->
+                        <div id="content-overview" class="space-y-8">
+                            <p id="modalDescription" class="text-white/60 leading-relaxed text-sm md:text-base"></p>
+                            
+                            <div class="space-y-4">
+                                <h4 class="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">Key Proficiency</h4>
+                                <div id="modalProficiencies" class="flex flex-wrap gap-3">
+                                    <!-- Badges will be injected here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certificate Content -->
+                        <div id="content-certificate" class="hidden space-y-6">
+                            <div class="bg-white/5 border border-white/5 rounded-2xl p-6 flex items-center justify-between group hover:border-accent-purple/30 transition">
+                                <div class="space-y-1">
+                                    <h5 id="modalCertName" class="font-bold text-white"></h5>
+                                    <p class="text-[10px] text-white/30 uppercase tracking-widest">Verified Credential</p>
+                                </div>
+                                <div class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 22 3 22 10"></polyline><line x1="10" y1="14" x2="22" y2="2"></line></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <script>
+            // Typing Effect
+            const typingText = document.getElementById('typing-text');
+            const words = ["Problem Solver", "UI/UX Designer", "Software Architect"];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typeSpeed = 100;
 
-            function zoomCertificate(imageUrl) {
+            function type() {
+                const currentWord = words[wordIndex];
+                if (isDeleting) {
+                    typingText.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                    typeSpeed = 50;
+                } else {
+                    typingText.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                    typeSpeed = 150;
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    isDeleting = true;
+                    typeSpeed = 1500; // Pause at the end
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    typeSpeed = 500;
+                }
+
+                setTimeout(type, typeSpeed);
+            }
+
+            document.addEventListener('DOMContentLoaded', type);
+
+            function toggleMenu() {
+                const menu = document.getElementById('mobile-menu');
+                const isOpen = !menu.classList.contains('-translate-y-full');
+                
+                if (isOpen) {
+                    menu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                } else {
+                    menu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                }
+            }
+
+            function openToolModal(tool) {
+                const modal = document.getElementById('toolModal');
+                const name = document.getElementById('modalName');
+                const category = document.getElementById('modalCategory');
+                const icon = document.getElementById('modalIcon');
+                const description = document.getElementById('modalDescription');
+                const proficiencies = document.getElementById('modalProficiencies');
+                const certName = document.getElementById('modalCertName');
+
+                name.textContent = tool.name;
+                category.textContent = tool.category;
+                icon.innerHTML = tool.icon;
+                
+                // Color specific styling
+                icon.className = `w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg bg-${tool.color}/10 text-${tool.color}`;
+                if(tool.color === 'yellow-500') icon.classList.add('text-yellow-500'); // Ensure visibility
+
+                description.textContent = tool.description;
+                certName.textContent = tool.certificate;
+
+                // Proficiencies
+                proficiencies.innerHTML = '';
+                tool.proficiencies.forEach(p => {
+                    const span = document.createElement('span');
+                    span.className = `px-4 py-2 bg-white/5 border border-white/5 rounded-xl text-[10px] font-bold text-white/50 uppercase tracking-widest hover:text-white hover:border-white/10 transition`;
+                    span.textContent = p;
+                    proficiencies.appendChild(span);
+                });
+
+                // Reset tabs
+                switchToolTab('overview');
+
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeToolModal() {
+                const modal = document.getElementById('toolModal');
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+
+            function switchToolTab(tab) {
+                const overviewContent = document.getElementById('content-overview');
+                const certContent = document.getElementById('content-certificate');
+                const overviewIndicator = document.getElementById('tab-indicator-overview');
+                const certIndicator = document.getElementById('tab-indicator-certificate');
+                const overviewText = document.getElementById('tab-overview');
+                const certText = document.getElementById('tab-certificate');
+
+                if (tab === 'overview') {
+                    overviewContent.classList.remove('hidden');
+                    certContent.classList.add('hidden');
+                    overviewIndicator.classList.replace('scale-x-0', 'scale-x-100');
+                    certIndicator.classList.replace('scale-x-100', 'scale-x-0');
+                    overviewText.classList.replace('text-white/40', 'text-white');
+                    certText.classList.replace('text-white', 'text-white/40');
+                } else {
+                    overviewContent.classList.add('hidden');
+                    certContent.classList.remove('hidden');
+                    overviewIndicator.classList.replace('scale-x-100', 'scale-x-0');
+                    certIndicator.classList.replace('scale-x-0', 'scale-x-100');
+                    overviewText.classList.replace('text-white', 'text-white/40');
+                    certText.classList.replace('text-white/40', 'text-white');
+                }
+            }
+
+            function openZoom(image, title) {
                 const modal = document.getElementById('certificateZoom');
-                const image = document.getElementById('zoomedImage');
-                image.src = imageUrl;
+                const zoomedImg = document.getElementById('zoomedImage');
+                const zoomTitle = document.getElementById('zoomTitle');
+                const zoomDownload = document.getElementById('zoomDownload');
+
+                zoomedImg.src = image;
+                zoomTitle.textContent = title + ".jpg";
+                zoomDownload.href = image;
+
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
             }
@@ -514,13 +963,10 @@
             function closeZoom() {
                 const modal = document.getElementById('certificateZoom');
                 modal.classList.add('hidden');
-                document.body.style.overflow = '';
+                document.body.style.overflow = 'auto';
             }
 
-            // Close zoom on Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') closeZoom();
-            });
+            document.getElementById('menu-btn').addEventListener('click', toggleMenu);
         </script>
 
         <style>
