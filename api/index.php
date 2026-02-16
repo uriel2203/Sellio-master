@@ -18,17 +18,20 @@ try {
     require __DIR__ . '/../vendor/autoload.php';
 
     // 3. Early Check for APP_KEY
-    if (empty(getenv('APP_KEY')) && empty($_ENV['APP_KEY'])) {
-        // We throw this early because Laravel will fail with a cryptic 'view' error otherwise
+    $appKey = getenv('APP_KEY') ?: ($_ENV['APP_KEY'] ?? null);
+    if (empty($appKey)) {
         throw new \Exception("APP_KEY is missing. Please add it to Vercel Environment Variables.");
     }
 
     // 4. Load Application
     $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-    // 5. Early View Registration Safeguard
-    // If we're crashing during kernel handling, we want to at least have the View system ready
-    // to render the diagnostic error page if needed.
+    // 5. Explicitly Register Filesystem & View BEFORE handling the request
+    // These are needed for error rendering if anything fails during kernel handle.
+    // Order matters: view depends on files.
+    if (!$app->bound('files')) {
+        $app->register(\Illuminate\Filesystem\FilesystemServiceProvider::class);
+    }
     if (!$app->bound('view')) {
         $app->register(\Illuminate\View\ViewServiceProvider::class);
     }
@@ -52,18 +55,14 @@ try {
     echo "<h3>Execution Trace:</h3>";
     echo "<pre style='background: #fee2e2; padding: 10px; overflow: auto;'>" . htmlspecialchars($e->getTraceAsString()) . "</pre>";
     
-    // Check if view is bound for further debugging
     if (isset($app)) {
-        echo "<h4>Internal State:</h4>";
-        echo "<ul>";
-        echo "<li>App Bound: Yes</li>";
+        echo "<h4>Internal State:</h4><ul>";
+        echo "<li>Files Service Bound: " . ($app->bound('files') ? 'Yes' : 'No') . "</li>";
         echo "<li>View Service Bound: " . ($app->bound('view') ? 'Yes' : 'No') . "</li>";
-        echo "<li>Config Service Bound: " . ($app->bound('config') ? 'Yes' : 'No') . "</li>";
         echo "<li>Storage Path: " . htmlspecialchars($app->storagePath()) . "</li>";
         echo "</ul>";
     }
     echo "</div>";
 
-    // Log to Vercel StdErr
     error_log("VERCEL ERROR: " . $e->getMessage() . " in " . $e->getFile() . ":" . $e->getLine());
 }
