@@ -217,19 +217,35 @@
             .animate-zoom { animation: zoom-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
             :root {
-                --primary-bg: #0b011d;
+                --primary-bg: #05010d;
                 --accent-purple: #8b5cf6;
                 --accent-pink: #ec4899;
+                --card-bg: rgba(30, 30, 46, 0.4);
+                --text-main: #ffffff;
+                --text-muted: rgba(255, 255, 255, 0.4);
+                --border-color: rgba(255, 255, 255, 0.05);
+                --glass-nav: rgba(5, 1, 13, 0.7);
             }
+
+            html.light {
+                --primary-bg: #f8fafc;
+                --card-bg: rgba(255, 255, 255, 0.6);
+                --text-main: #0f172a;
+                --text-muted: rgba(15, 23, 42, 0.5);
+                --border-color: rgba(15, 23, 42, 0.08);
+                --glass-nav: rgba(248, 250, 252, 0.8);
+            }
+
             body { 
                 background-color: var(--primary-bg);
-                color: #ffffff;
+                color: var(--text-main);
                 font-family: 'Outfit', sans-serif;
                 overflow-x: hidden;
                 background-image: 
-                    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
-                    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 40%);
+                    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
                 background-attachment: fixed;
+                transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             }
             
             .text-gradient {
@@ -243,9 +259,10 @@
             }
 
             .glass-nav {
-                background: rgba(11, 1, 29, 0.7);
+                background: var(--glass-nav);
                 backdrop-filter: blur(20px);
-                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                border-bottom: 1px solid var(--border-color);
+                transition: 0.5s;
             }
 
             .btn-glow-purple {
@@ -332,18 +349,18 @@
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8">
-                <a href="#home" class="text-sm font-medium text-white/70 hover:text-white transition py-2 px-4 rounded-full bg-accent-purple/20 border border-accent-purple/30">Home</a>
-                <a href="#about" class="text-sm font-medium text-white/70 hover:text-white transition">About</a>
-                <a href="#edu" class="text-sm font-medium text-white/70 hover:text-white transition">Education</a>
-                <a href="#skills" class="text-sm font-medium text-white/70 hover:text-white transition">Skills</a>
-                <a href="#projects" class="text-sm font-medium text-white/70 hover:text-white transition">Projects</a>
-                <a href="#testimonial" class="text-sm font-medium text-white/70 hover:text-white transition">Testimonial</a>
+                <a href="#home" class="text-sm font-medium opacity-70 hover:opacity-100 transition py-2 px-4 rounded-full bg-accent-purple/20 border border-accent-purple/30">Home</a>
+                <a href="#about" class="text-sm font-medium opacity-70 hover:opacity-100 transition">About</a>
+                <a href="#edu" class="text-sm font-medium opacity-70 hover:opacity-100 transition">Education</a>
+                <a href="#skills" class="text-sm font-medium opacity-70 hover:opacity-100 transition">Skills</a>
+                <a href="#projects" class="text-sm font-medium opacity-70 hover:opacity-100 transition">Projects</a>
+                <a href="#certs" class="text-sm font-medium opacity-70 hover:opacity-100 transition">Certificates</a>
                 
                 <div class="flex items-center gap-6 ml-4">
-                    <button class="text-white hover:text-accent-pink transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+                    <button id="theme-toggle" class="text-white hover:text-accent-pink transition w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10" onclick="toggleTheme()">
+                        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
                     </button>
-                    <a href="#contact" class="px-6 py-2 border border-accent-purple rounded-full text-sm font-semibold hover:bg-accent-purple transition shadow-[0_0_15px_rgba(139,92,246,0.3)]">
+                    <a href="#contact" class="px-6 py-2 border border-accent-purple rounded-full text-sm font-semibold hover:bg-accent-purple text-white transition shadow-[0_0_15px_rgba(139,92,246,0.3)]">
                         Contact Me
                     </a>
                 </div>
@@ -351,12 +368,12 @@
 
             <!-- Mobile Nav Container -->
             <div id="mobile-menu" class="fixed top-[88px] left-0 w-full bg-dark-bg/95 backdrop-blur-xl border-b border-white/5 flex flex-col items-center py-10 gap-6 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 md:hidden z-40">
-                <a href="#home" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Home</a>
-                <a href="#about" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">About</a>
-                <a href="#edu" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Education</a>
-                <a href="#skills" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Skills</a>
-                <a href="#projects" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Projects</a>
-                <a href="#testimonial" class="text-lg font-medium text-white hover:text-accent-pink transition" onclick="toggleMenu()">Testimonial</a>
+                <a href="#home" class="text-lg font-medium hover:text-accent-pink transition" onclick="toggleMenu()">Home</a>
+                <a href="#about" class="text-lg font-medium hover:text-accent-pink transition" onclick="toggleMenu()">About</a>
+                <a href="#edu" class="text-lg font-medium hover:text-accent-pink transition" onclick="toggleMenu()">Education</a>
+                <a href="#skills" class="text-lg font-medium hover:text-accent-pink transition" onclick="toggleMenu()">Skills</a>
+                <a href="#projects" class="text-lg font-medium hover:text-accent-pink transition" onclick="toggleMenu()">Projects</a>
+                <a href="#certs" class="text-lg font-medium hover:text-accent-pink transition" onclick="toggleMenu()">Certificates</a>
                 <a href="#contact" class="px-8 py-3 bg-accent-purple rounded-full text-sm font-bold shadow-lg" onclick="toggleMenu()">Contact Me</a>
             </div>
         </header>
@@ -377,88 +394,84 @@
         </script>
 
         <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen flex items-center bg-dark-bg px-6 md:px-[9%] py-20 overflow-hidden">
+        <section id="home" class="relative min-h-screen flex items-center px-6 md:px-[9%] py-20 overflow-hidden">
             <!-- Background Nebula Effect -->
             <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-purple/10 to-transparent pointer-events-none"></div>
 
-            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 items-center gap-12 relative z-10">
-                <div class="space-y-10 order-2 lg:order-1">
+            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-12 relative z-10">
+                <div class="space-y-10 order-2 lg:order-1 relative z-10">
                     <!-- Badge -->
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-purple/10 border border-accent-purple/20 text-[10px] font-bold tracking-widest text-white/80 uppercase animate-pulse-subtle">
-                        <span class="w-2 h-2 rounded-full bg-accent-purple shadow-[0_0_8px_rgba(139,92,246,0.8)]"></span>
-                        Open to Work 2025
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-white/5 border border-white/10 animate-fade-in">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-purple opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-purple"></span>
+                        </span>
+                        <span class="text-[10px] font-bold text-white/50 uppercase tracking-[0.2em]">Available for Freelance</span>
                     </div>
 
                     <!-- Main Heading -->
                     <div class="space-y-4">
-                        <h1 class="text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-2xl">
-                            Creative Solutions <br>
-                            <span class="text-gradient">Digital World</span>
+                        <h1 class="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter">
+                            <span class="block">Creative Solutions</span>
+                            <span class="block text-gradient">Digital World</span>
                         </h1>
                         
-                        <div class="text-lg md:text-xl text-white/70 font-medium">
-                            I am a <span id="typing-text" class="text-white typing-cursor font-bold"></span>
+                        <div class="text-lg md:text-xl font-medium text-white/60">
+                            I am a <span id="typing-text" class="text-accent-purple border-r-2 border-accent-purple pr-1"></span>
                         </div>
-                    </div>
 
-                    <p class="text-sm md:text-base text-white/50 max-w-lg leading-relaxed">
-                        Transforming complex ideas into modern, responsive, and interactive websites that help your business grow faster.
-                    </p>
+                        <p class="text-sm md:text-base text-white/40 max-w-md leading-relaxed mt-4">
+                            Transforming complex challenges into elegant technical solutions. Specializing in high-performance system architecture and modern web experiences.
+                        </p>
+                    </div>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-wrap items-center gap-6">
-                        <a href="#projects" class="px-8 py-4 bg-accent-gradient rounded-xl text-sm font-bold flex items-center gap-2 hover:scale-105 transition shadow-[0_0_20px_rgba(236,72,153,0.3)]">
-                            See Portfolio
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        <a href="#projects" class="px-10 py-5 bg-accent-purple text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all duration-300 shadow-xl shadow-accent-purple/20 active:scale-95 flex items-center gap-3">
+                            View Portfolio
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="translate-x-0 group-hover:translate-x-1 transition"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
-                        <a href="#about" class="px-8 py-4 border border-white/10 rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-white/5 transition">
+                        <a href="#about" class="px-10 py-5 bg-white/5 border border-white/10 rounded-2xl font-black text-xs text-white uppercase tracking-widest hover:bg-white/10 transition-all duration-300 flex items-center gap-3">
                             About Me
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-white/40"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                         </a>
                     </div>
 
                     <!-- Stats Grid -->
-                    <div class="grid grid-cols-3 gap-8 pt-6 border-t border-white/5">
+                    <div class="grid grid-cols-3 gap-12 pt-10 border-t border-white/5">
                         <div class="space-y-1">
-                            <h4 class="text-2xl md:text-3xl font-bold text-white">5+</h4>
-                            <p class="text-[8px] tracking-[0.2em] font-black text-white/40 uppercase">Experience</p>
+                            <h4 class="text-4xl font-black text-white">5+</h4>
+                            <p class="text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">Experience</p>
                         </div>
                         <div class="space-y-1">
-                            <h4 class="text-2xl md:text-3xl font-bold text-white">50+</h4>
-                            <p class="text-[8px] tracking-[0.2em] font-black text-white/40 uppercase">Projects</p>
+                            <h4 class="text-4xl font-black text-white">50+</h4>
+                            <p class="text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">Projects</p>
                         </div>
                         <div class="space-y-1">
-                            <h4 class="text-2xl md:text-3xl font-bold text-white">20+</h4>
-                            <p class="text-[8px] tracking-[0.2em] font-black text-white/40 uppercase">Clients</p>
+                            <h4 class="text-4xl font-black text-white">20+</h4>
+                            <p class="text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">Clients</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="relative order-1 lg:order-2 flex justify-center items-center">
-                    <!-- Hero Image Container -->
-                    <div class="relative w-full max-w-lg aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
-                        <img src="{{ $profile->image ?? asset('image/uriell.jpg') }}" alt="Hizkia" class="w-full h-full object-cover grayscale brightness-75">
-                        
-                        <!-- Decorative Gradient Overlay -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/80 via-transparent to-transparent"></div>
+                <div class="relative order-1 lg:order-2">
+                    <div class="relative rounded-[3rem] overflow-hidden border border-white/10 group shadow-2xl max-w-[80%] ml-auto">
+                        <img src="{{ $profile->image }}" alt="John" class="w-full aspect-[4/5] object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition duration-1000 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#05010d] via-transparent to-transparent opacity-60"></div>
                     </div>
 
                     <!-- Floating Terminal Card -->
                     <div class="absolute -bottom-10 -left-10 md:-left-20 w-72 p-6 rounded-2xl bg-[#1e1e2e]/90 backdrop-blur-xl border border-white/5 shadow-2xl animate-float" style="animation-delay: 0.5s;">
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-2 h-2 rounded-full bg-[#ff5f56]"></div>
-                            <div class="w-2 h-2 rounded-full bg-[#ffbd2e]"></div>
-                            <div class="w-2 h-2 rounded-full bg-[#27c93f]"></div>
-                            <span class="text-[8px] text-white/30 ml-2 font-mono">app.js</span>
+                        <div class="flex gap-2 mb-4">
+                            <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                         </div>
-                        <div class="font-mono text-[10px] leading-relaxed">
-                            <span class="text-accent-purple">const</span> <span class="text-accent-pink">student</span> = {<br>
-                            &nbsp;&nbsp;name: <span class="text-green-400">"Uriel John"</span>,<br>
-                            &nbsp;&nbsp;role: <span class="text-green-400">"IT Student"</span><br>
-                            };
-                        </div>
-                        <div class="absolute bottom-4 right-4 text-white/20">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+                        <div class="space-y-2 font-mono text-xs">
+                            <p class="text-blue-400">const <span class="text-white">developer</span> = {</p>
+                            <p class="pl-4 text-white/50">name: <span class="text-accent-pink">'Uriel John'</span>,</p>
+                            <p class="pl-4 text-white/50">passion: <span class="text-accent-pink">'Tech Alchemy'</span></p>
+                            <p class="text-blue-400">};</p>
                         </div>
                     </div>
                 </div>
@@ -466,7 +479,7 @@
         </section>
 
 
-        <section id="about" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-y border-white/5 relative overflow-hidden">
+        <section id="about" class="py-24 md:py-32 px-6 md:px-[9%] border-y border-white/5 relative overflow-hidden">
             <div class="max-w-7xl mx-auto w-full relative z-10">
                 <div class="text-center space-y-2 mb-16">
                     <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">Overview</p>
@@ -475,14 +488,14 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Who Am I Card -->
-                    <div class="md:col-span-2 md:row-span-2 bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 hover:border-accent-purple/30 transition duration-500">
+                    <div class="md:col-span-2 md:row-span-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-8 hover:border-accent-purple/30 transition duration-500">
                         <div class="flex items-center gap-4 mb-6">
                             <div class="w-12 h-12 rounded-2xl bg-accent-purple/20 flex items-center justify-center text-accent-purple">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                             </div>
                             <h3 class="text-xl font-bold text-white">Who Am I?</h3>
                         </div>
-                        <div class="space-y-4 text-white/60 leading-relaxed text-sm md:text-base">
+                        <div class="space-y-4 opacity-60 leading-relaxed text-sm md:text-base">
                             <p>
                                 Hi! I'm <span class="text-white font-bold">Uriel John</span>, a dedicated <span class="text-accent-pink font-bold">IT Student</span> based in the Philippines. 
                                 I have a deep passion for creating digital interfaces that are not only functional but also visually stunning. 
@@ -496,7 +509,7 @@
                     </div>
 
                     <!-- Experience Stats Card -->
-                    <div class="bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 flex flex-col justify-center items-center text-center hover:border-accent-purple/30 transition duration-500">
+                    <div class="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-8 flex flex-col justify-center items-center text-center hover:border-accent-purple/30 transition duration-500">
                         <div class="space-y-2 mb-8">
                             <h4 class="text-5xl font-bold text-gradient">2+</h4>
                             <p class="text-[10px] tracking-[0.2em] font-black text-white/40 uppercase">Years Experience</p>
@@ -508,9 +521,9 @@
                     </div>
 
                     <!-- Current Focus Card -->
-                    <div class="bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 hover:border-accent-pink/30 transition duration-500">
+                    <div class="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-8 hover:border-accent-pink/30 transition duration-500">
                         <h3 class="text-lg font-bold text-white mb-4">Current Focus</h3>
-                        <p class="text-white/60 text-sm mb-6">Deep diving into <span class="text-accent-purple">Web3</span> & <span class="text-accent-pink">AI Integration</span>.</p>
+                        <p class="opacity-60 text-sm mb-6">Deep diving into <span class="text-accent-purple">Web3</span> & <span class="text-accent-pink">AI Integration</span>.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-accent-purple/10 border border-accent-purple/20 rounded-md text-[10px] font-bold text-accent-purple">Laravel</span>
                             <span class="px-3 py-1 bg-accent-pink/10 border border-accent-pink/20 rounded-md text-[10px] font-bold text-accent-pink">Cloud</span>
@@ -518,10 +531,10 @@
                     </div>
 
                     <!-- Base Station Card -->
-                    <div class="bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 flex items-center justify-between hover:border-green-500/30 transition duration-500">
+                    <div class="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-8 flex items-center justify-between hover:border-green-500/30 transition duration-500">
                         <div class="space-y-2">
                             <h3 class="text-lg font-bold text-white">Base Station</h3>
-                            <p class="text-white/40 text-[10px] font-bold uppercase tracking-widest">Davao City, PH (GMT+8)</p>
+                            <p class="opacity-40 text-[10px] font-bold uppercase tracking-widest">Davao City, PH (GMT+8)</p>
                             <div class="flex items-center gap-2 mt-4">
                                 <span class="relative flex h-2 w-2">
                                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -536,7 +549,7 @@
                     </div>
 
                     <!-- Core Stack Card -->
-                    <div class="md:col-span-2 bg-[#1e1e2e]/40 border border-white/5 rounded-3xl p-8 hover:border-accent-purple/30 transition duration-500">
+                    <div class="md:col-span-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-8 hover:border-accent-purple/30 transition duration-500">
                         <h3 class="text-lg font-bold text-white mb-6">Core Stack</h3>
                         <div class="flex flex-wrap items-center gap-8">
                             <div class="flex items-center gap-3 group">
@@ -555,7 +568,7 @@
                                 <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-blue-400 group-hover:text-white transition">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
                                 </div>
-                                <span class="text-xs font-bold text-white/50 uppercase tracking-widest">MySQL</span>
+                                <span class="text-xs font-bold opacity-50 uppercase tracking-widest">MySQL</span>
                             </div>
                         </div>
                     </div>
@@ -563,7 +576,7 @@
             </div>
         </section>
 
-        <section id="edu" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
+        <section id="edu" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
             <div class="max-w-7xl mx-auto w-full space-y-16">
                 <div class="text-center space-y-2">
                     <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">My Journey</p>
@@ -572,7 +585,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     @foreach($experiences as $exp)
-                    <div class="group relative bg-[#1e1e2e]/40 border border-white/5 rounded-[2.5rem] p-10 hover:border-{{ $exp->color }}/50 hover:shadow-[0_0_50px_rgba(139,92,246,0.1)] transition-all duration-700 overflow-hidden">
+                    <div class="group relative bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[2.5rem] p-10 hover:border-{{ $exp->color }}/50 hover:shadow-[0_0_50px_rgba(139,92,246,0.1)] transition-all duration-700 overflow-hidden">
                         <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-{{ $exp->color }}/5 rounded-full blur-3xl group-hover:bg-{{ $exp->color }}/10 transition-colors duration-700"></div>
                         
                         <div class="relative z-10 space-y-10">
@@ -582,13 +595,12 @@
                                     {!! $exp->icon !!}
                                 </div>
                             </div>
-
                             <div class="space-y-4">
                                 <div class="space-y-1">
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-{{ $exp->color }} transition duration-500">{{ $exp->role }}</h3>
-                                    <p class="text-white/30 text-xs font-bold uppercase tracking-[0.2em]">{{ $exp->company }}</p>
+                                    <h3 class="text-2xl font-bold group-hover:text-{{ $exp->color }} transition duration-500">{{ $exp->role }}</h3>
+                                    <p class="opacity-30 text-xs font-bold uppercase tracking-[0.2em]">{{ $exp->company }}</p>
                                 </div>
-                                <p class="text-white/50 text-sm leading-relaxed">{{ $exp->description }}</p>
+                                <p class="opacity-50 text-sm leading-relaxed">{{ $exp->description }}</p>
                             </div>
                         </div>
                     </div>
@@ -598,7 +610,7 @@
         </section>
 
         <!-- Certificates Section -->
-        <section id="certs" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5 overflow-hidden">
+        <section id="certs" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5 overflow-hidden">
             <div class="max-w-7xl mx-auto w-full space-y-20">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
                     <div class="space-y-4">
@@ -608,15 +620,15 @@
                     <p class="text-white/30 text-sm max-w-xs font-medium leading-relaxed">A collection of industry-recognized certifications and technical validations.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach($certificates as $cert)
-                    <div class="group relative bg-black/40 border border-white/5 rounded-[3rem] p-6 hover:border-{{ $cert->color }}/30 transition-all duration-700 cursor-pointer overflow-hidden" onclick="openZoom('{{ $cert->image }}', '{{ $cert->title }}')">
+                    <div class="group relative bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[2rem] p-4 hover:border-{{ $cert->color }}/30 transition-all duration-700 cursor-pointer overflow-hidden" onclick="openZoom('{{ $cert->image }}', '{{ $cert->title }}')">
                         <!-- Decorative Background Gradient -->
                         <div class="absolute inset-0 bg-{{ $cert->color }}/0 group-hover:bg-{{ $cert->color }}/5 transition-colors duration-700"></div>
                         
-                        <div class="relative space-y-6">
+                        <div class="relative space-y-4">
                             <!-- Certificate Image Container -->
-                            <div class="relative aspect-[4/3] rounded-[2rem] overflow-hidden border border-white/5 group-hover:border-{{ $cert->color }}/20 transition-all duration-700">
+                            <div class="relative aspect-[4/3] rounded-[1.5rem] overflow-hidden border border-white/5 group-hover:border-{{ $cert->color }}/20 transition-all duration-700">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                                 <img src="{{ $cert->image }}" alt="{{ $cert->title }}" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition duration-1000">
                                 
@@ -632,9 +644,9 @@
                                     <span class="text-[10px] font-black text-{{ $cert->color }} uppercase tracking-[0.2em]">{{ $cert->year }}</span>
                                     <span class="w-1.5 h-1.5 rounded-full bg-{{ $cert->color }}/40 group-hover:scale-150 transition-transform duration-700 shadow-[0_0_10px_{{ $cert->color }}]"></span>
                                 </div>
-                                <div class="space-y-1">
-                                    <h3 class="text-xl font-bold text-white group-hover:text-{{ $cert->color }} transition duration-500">{{ $cert->title }}</h3>
-                                    <p class="text-white/30 text-[9px] font-bold uppercase tracking-widest">{{ $cert->administered_by }}</p>
+                                <div>
+                                    <h3 class="text-lg font-bold group-hover:text-{{ $cert->color }} transition duration-500 line-clamp-1">{{ $cert->title }}</h3>
+                                    <p class="opacity-30 text-[8px] font-bold uppercase tracking-widest">{{ $cert->administered_by }}</p>
                                 </div>
                             </div>
                         </div>
@@ -644,7 +656,7 @@
             </div>
         </section>
 
-        <section id="skills" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
+        <section id="skills" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
             <div class="max-w-7xl mx-auto w-full space-y-16">
                 <div class="text-center space-y-2">
                     <p class="text-accent-pink text-xs font-bold tracking-[0.4em] uppercase">Tech Stack</p>
@@ -653,13 +665,13 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach($tools as $tool)
-                    <div onclick="openToolModal({{ json_encode($tool) }})" class="group bg-[#1e1e2e]/30 border border-white/5 p-8 rounded-3xl flex items-center gap-6 hover:border-{{ $tool->color }}/30 transition-all duration-300 cursor-pointer">
+                    <div onclick="openToolModal({{ json_encode($tool) }})" class="group bg-[var(--card-bg)] border border-[var(--border-color)] p-8 rounded-3xl flex items-center gap-6 hover:border-{{ $tool->color }}/30 transition-all duration-300 cursor-pointer">
                         <div class="w-14 h-14 rounded-2xl bg-{{ $tool->color }}/10 flex items-center justify-center text-{{ $tool->color }} group-hover:bg-{{ $tool->color }} group-hover:text-{{ $tool->color == 'yellow-500' ? 'black' : 'white' }} transition-all duration-300">
                             {!! $tool->icon !!}
                         </div>
                         <div class="space-y-1">
-                            <h3 class="font-bold text-white text-lg">{{ $tool->name }}</h3>
-                            <p class="text-white/40 text-xs font-bold uppercase tracking-wider">{{ $tool->category }}</p>
+                            <h3 class="font-bold text-lg">{{ $tool->name }}</h3>
+                            <p class="opacity-40 text-xs font-bold uppercase tracking-wider">{{ $tool->category }}</p>
                         </div>
                     </div>
                     @endforeach
@@ -668,7 +680,7 @@
         </section>
 
         <!-- Projects Section (Selected Works) -->
-        <section id="projects" class="bg-dark-bg py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
+        <section id="projects" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5">
             <div class="max-w-7xl mx-auto w-full space-y-16">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
                     <div class="space-y-2">
@@ -676,14 +688,14 @@
                         <h2 class="text-4xl md:text-5xl font-bold text-white">Selected <span class="text-gradient">Works</span></h2>
                     </div>
                     <a href="#" class="text-sm font-bold text-white/40 hover:text-white transition flex items-center gap-2 group">
-                        Lihat Semua
+                        View All
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     @foreach($projects as $project)
-                    <div class="group relative bg-[#1e1e2e]/20 border border-white/5 rounded-[2rem] overflow-hidden hover:border-accent-purple/30 transition-all duration-500">
+                    <div class="group relative bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[2rem] overflow-hidden hover:border-accent-purple/30 transition-all duration-500">
                         <div class="aspect-[16/10] overflow-hidden">
                             <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition duration-1000">
                         </div>
@@ -691,8 +703,8 @@
                         <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                             <div class="flex justify-between items-end">
                                 <div class="space-y-2">
-                                    <h3 class="text-2xl font-bold text-white mb-2">{{ $project->title }}</h3>
-                                    <p class="text-white/50 text-sm max-w-md line-clamp-2">{{ $project->description }}</p>
+                                    <h3 class="text-2xl font-bold mb-2">{{ $project->title }}</h3>
+                                    <p class="opacity-50 text-sm max-w-md line-clamp-2">{{ $project->description }}</p>
                                 </div>
                                 <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white backdrop-blur-md group-hover:bg-accent-purple transition">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -706,28 +718,187 @@
         </section>
 
 
-        <!-- Footer -->
-        <footer class="bg-dark-bg py-12 px-[9%] border-t border-white/5">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-                <div class="flex flex-col items-center md:items-start leading-none">
-                    <a href="#" class="text-xl font-bold text-white flex items-center gap-1">
-                        <span class="text-accent-pink">&lt;</span>JohnDev<span class="text-accent-pink">/&gt;</span>
-                    </a>
-                    <p class="text-[8px] tracking-[0.3em] font-bold text-white/30 mt-2 uppercase">Crafting Digital Excellence</p>
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto w-full space-y-20">
+                <div class="text-center space-y-4">
+                    <p class="text-accent-purple text-xs font-bold tracking-[0.5em] uppercase">Get In Touch</p>
+                    <h2 class="text-5xl md:text-7xl font-black text-white leading-tight">Let's <span class="text-gradient">Connect</span></h2>
                 </div>
 
-                <p class="text-white/30 text-xs">Copyright &copy; {{ date('Y') }} JohnDev. All rights Reserved.</p>
-                
-                <div class="flex items-center gap-4">
-                    <a href="#" class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:text-accent-pink hover:border-accent-pink transition duration-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <div class="grid lg:grid-cols-12 gap-12">
+                    <!-- Left: Info Cards -->
+                    <div class="lg:col-span-4 space-y-6">
+                        <!-- Email Card -->
+                        <div class="group relative bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[2rem] p-8 hover:border-accent-purple/50 transition-all duration-500 overflow-hidden">
+                            <div class="relative z-10 space-y-6">
+                                <div class="w-12 h-12 rounded-2xl bg-accent-purple/10 flex items-center justify-center text-accent-purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">Email Resmi</p>
+                                    <div class="flex items-center justify-between gap-4">
+                                        <h4 id="email-address" class="text-sm font-bold text-white truncate">{{ $profile->email }}</h4>
+                                        <button onclick="copyEmail()" class="text-white/20 hover:text-white transition group/copy">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/copy:scale-110 transition"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="group relative bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[2rem] p-8 hover:border-accent-pink/50 transition-all duration-500 overflow-hidden">
+                            <div class="relative z-10 space-y-6">
+                                <div class="w-12 h-12 rounded-2xl bg-accent-pink/10 flex items-center justify-center text-accent-pink">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="space-y-1">
+                                    <p class="text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">Base Location</p>
+                                    <h4 class="text-lg font-bold text-white">{{ $profile->address }}</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Cards Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://www.linkedin.com/in/urieljohn-chavez-b9a010398/" target="_blank" class="group bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-6 flex flex-col items-center gap-3 hover:border-blue-400/50 transition-all duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-20 group-hover:text-blue-400 transition-colors duration-500"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                <span class="text-[10px] font-bold opacity-40 uppercase tracking-widest">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/uriel2203" target="_blank" class="group bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-6 flex flex-col items-center gap-3 hover:border-white/30 transition-all duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-20 group-hover:text-white transition-colors duration-500"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <span class="text-[10px] font-bold opacity-40 uppercase tracking-widest">GitHub</span>
+                            </a>
+                            <a href="https://www.facebook.com/urieljohn.chavez.9" target="_blank" class="group bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-6 flex flex-col items-center gap-3 hover:border-blue-600/50 transition-all duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-20 group-hover:text-blue-600 transition-colors duration-500"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                <span class="text-[10px] font-bold opacity-40 uppercase tracking-widest">Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/urieljohn_c/" target="_blank" class="group bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-6 flex flex-col items-center gap-3 hover:border-accent-pink/50 transition-all duration-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-20 group-hover:text-accent-pink transition-colors duration-500"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                <span class="text-[10px] font-bold opacity-40 uppercase tracking-widest">Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="lg:col-span-8 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[3rem] p-8 md:p-12 space-y-10 relative overflow-hidden backdrop-blur-xl">
+                        <div class="absolute top-0 right-0 p-8 flex gap-2">
+                             <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
+                             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
+                             <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <h3 class="text-3xl font-bold tracking-tight">Send Message<span class="text-accent-purple animate-pulse">_</span></h3>
+                        </div>
+
+                        <form id="contact-form" action="https://formsubmit.co/ajax/urieljohnchavez@gmail.com" method="POST" class="grid md:grid-cols-2 gap-6">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Portfolio Message!">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div class="space-y-2">
+                                <input type="text" name="name" placeholder="Name" required class="w-full bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl px-6 py-4 text-[var(--text-main)] text-sm focus:outline-none focus:border-accent-purple/50 transition duration-300 placeholder:opacity-20">
+                            </div>
+                            <div class="space-y-2">
+                                <input type="email" name="email" placeholder="Email Address" required class="w-full bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl px-6 py-4 text-[var(--text-main)] text-sm focus:outline-none focus:border-accent-purple/50 transition duration-300 placeholder:opacity-20">
+                            </div>
+                            <div class="md:col-span-2 space-y-2">
+                                <div class="relative">
+                                    <select name="category" required class="w-full bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl px-6 py-4 text-[var(--text-main)] opacity-30 text-sm focus:outline-none focus:border-accent-purple/50 transition duration-300 appearance-none">
+                                        <option value="" disabled selected>Select Project Type</option>
+                                        <option value="web">Web Development</option>
+                                        <option value="infrastructure">IT Infrastructure</option>
+                                        <option value="consulting">Consulting</option>
+                                    </select>
+                                    <div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 space-y-2">
+                                <textarea name="message" placeholder="Tell me about your project..." rows="5" required class="w-full bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl px-6 py-4 text-[var(--text-main)] text-sm focus:outline-none focus:border-accent-purple/50 transition duration-300 placeholder:opacity-20 resize-none"></textarea>
+                            </div>
+                            <div class="md:col-span-2">
+                                <button type="submit" class="w-full md:w-fit group h-14 px-10 bg-accent-purple text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3">
+                                    Send Message
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="translate-x-0 group-hover:translate-x-1 transition"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 px-6 overflow-hidden relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-accent-purple/5 to-transparent"></div>
+            <div class="max-w-7xl mx-auto w-full relative z-10 text-center space-y-10">
+                <p class="text-white/30 text-[10px] font-bold tracking-[0.5em] uppercase">What's Next?</p>
+                <div class="space-y-4">
+                    <h2 class="text-5xl md:text-8xl font-black text-white leading-tight">Let's build something <br> <span class="text-gradient">legendary together.</span></h2>
+                </div>
+                <div class="pt-6">
+                    <a href="mailto:{{ $profile->email }}" class="group relative inline-flex items-center gap-4 text-xl md:text-3xl font-bold text-white hover:text-accent-pink transition-colors duration-500">
+                        {{ $profile->email }}
+                        <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/20 group-hover:text-white group-hover:bg-accent-pink transition-all duration-500">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                        <div class="absolute -bottom-2 left-0 w-full h-px bg-white/10 group-hover:bg-accent-pink transition-colors duration-500"></div>
                     </a>
-                    <a href="#" class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:text-accent-pink hover:border-accent-pink transition duration-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                    <a href="#" class="w-10 h-10 border border-white/10 rounded-xl flex items-center justify-center text-white/50 hover:text-accent-pink hover:border-accent-pink transition duration-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redesigned Footer -->
+        <footer class="py-16 px-[9%] border-t border-white/5">
+            <div class="max-w-7xl mx-auto w-full space-y-16">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                    <!-- Brand -->
+                    <div class="flex flex-col items-center md:items-start leading-none">
+                        <a href="#" class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span class="text-accent-pink">&lt;</span>JohnDev<span class="text-accent-pink">/&gt;</span>
+                        </a>
+                        <p class="opacity-30 text-[8px] tracking-[0.3em] font-bold text-white/50 mt-3 uppercase">Pioneering Technical solutions</p>
+                    </div>
+
+                    <!-- NavLinks -->
+                    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                        <a href="#home" class="text-[10px] font-bold opacity-40 hover:opacity-100 transition uppercase tracking-widest text-white">Home</a>
+                        <a href="#about" class="text-[10px] font-bold opacity-40 hover:opacity-100 transition uppercase tracking-widest text-white">About</a>
+                        <a href="#projects" class="text-[10px] font-bold opacity-40 hover:opacity-100 transition uppercase tracking-widest text-white">Projects</a>
+                        <a href="#contact" class="text-[10px] font-bold opacity-40 hover:opacity-100 transition uppercase tracking-widest text-white">Contact</a>
+                    </div>
+
+                    <!-- Small Socials -->
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/30 hover:text-white hover:bg-white/10 transition duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/30 hover:text-white hover:bg-white/10 transition duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/30 hover:text-white hover:bg-white/10 transition duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="opacity-20 text-[10px] font-bold tracking-widest uppercase text-white">© {{ date('Y') }} JohnDev. Built with ❤️ & Code.</p>
+                    <div class="flex items-center gap-8">
+                        <div class="flex items-center gap-2">
+                            <span class="opacity-20 text-[10px] font-bold tracking-widest uppercase text-white">Local time:</span>
+                            <span class="opacity-100 text-[10px] font-bold tracking-widest uppercase text-white" id="local-time">--:-- --</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_10px_#22c55e]"></span>
+                            <span class="text-white text-[10px] font-bold tracking-widest uppercase">Online Status</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -772,7 +943,7 @@
         <!-- Tool Detail Modal -->
         <div id="toolModal" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4">
             <div class="absolute inset-0 bg-black/80 backdrop-blur-md" onclick="closeToolModal()"></div>
-            <div class="relative bg-[#0b011d] border border-white/10 rounded-[2.5rem] w-full max-w-2xl overflow-hidden shadow-2xl animate-zoom">
+            <div class="relative bg-[var(--primary-bg)] border border-[var(--border-color)] rounded-[2.5rem] w-full max-w-2xl overflow-hidden shadow-2xl animate-zoom">
                 <!-- Close Button -->
                 <button onclick="closeToolModal()" class="absolute top-8 right-8 text-white/40 hover:text-white transition group">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -785,18 +956,18 @@
                             <!-- Icon will be injected here -->
                         </div>
                         <div>
-                            <h3 id="modalName" class="text-3xl font-bold text-white tracking-tight"></h3>
-                            <p id="modalCategory" class="text-xs font-bold text-white/40 uppercase tracking-[0.2em] mt-1"></p>
+                            <h3 id="modalName" class="text-3xl font-bold tracking-tight"></h3>
+                            <p id="modalCategory" class="text-xs font-bold opacity-40 uppercase tracking-[0.2em] mt-1"></p>
                         </div>
                     </div>
 
                     <!-- Tabs -->
-                    <div class="flex border-b border-white/5 relative">
-                        <button onclick="switchToolTab('overview')" id="tab-overview" class="flex-1 py-4 text-sm font-bold tracking-widest uppercase transition relative group text-white">
+                    <div class="flex border-b border-[var(--border-color)] relative">
+                        <button onclick="switchToolTab('overview')" id="tab-overview" class="flex-1 py-4 text-sm font-bold tracking-widest uppercase transition relative group">
                             Overview
                             <div class="absolute bottom-0 left-0 w-full h-[2px] bg-accent-purple shadow-[0_0_8px_rgba(139,92,246,0.8)] scale-x-100 transition-transform duration-300 origin-left" id="tab-indicator-overview"></div>
                         </button>
-                        <button onclick="switchToolTab('certificate')" id="tab-certificate" class="flex-1 py-4 text-sm font-bold tracking-widest uppercase transition relative group text-white/40 hover:text-white">
+                        <button onclick="switchToolTab('certificate')" id="tab-certificate" class="flex-1 py-4 text-sm font-bold tracking-widest uppercase transition relative group opacity-40 hover:opacity-100">
                             Certificate
                             <div class="absolute bottom-0 left-0 w-full h-[2px] bg-accent-purple shadow-[0_0_8px_rgba(139,92,246,0.8)] scale-x-0 transition-transform duration-300 origin-left" id="tab-indicator-certificate"></div>
                         </button>
@@ -806,10 +977,10 @@
                     <div class="min-h-[200px]">
                         <!-- Overview Content -->
                         <div id="content-overview" class="space-y-8">
-                            <p id="modalDescription" class="text-white/60 leading-relaxed text-sm md:text-base"></p>
+                            <p id="modalDescription" class="opacity-60 leading-relaxed text-sm md:text-base"></p>
                             
                             <div class="space-y-4">
-                                <h4 class="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">Key Proficiency</h4>
+                                <h4 class="text-[10px] font-black opacity-30 uppercase tracking-[0.3em]">Key Proficiency</h4>
                                 <div id="modalProficiencies" class="flex flex-wrap gap-3">
                                     <!-- Badges will be injected here -->
                                 </div>
@@ -820,8 +991,8 @@
                         <div id="content-certificate" class="hidden space-y-6">
                             <div class="bg-white/5 border border-white/5 rounded-2xl p-6 flex items-center justify-between group hover:border-accent-purple/30 transition">
                                 <div class="space-y-1">
-                                    <h5 id="modalCertName" class="font-bold text-white"></h5>
-                                    <p class="text-[10px] text-white/30 uppercase tracking-widest">Verified Credential</p>
+                                    <h5 id="modalCertName" class="font-bold"></h5>
+                                    <p class="text-[10px] opacity-30 uppercase tracking-widest">Verified Credential</p>
                                 </div>
                                 <div class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 22 3 22 10"></polyline><line x1="10" y1="14" x2="22" y2="2"></line></svg>
@@ -965,6 +1136,105 @@
                 modal.classList.add('hidden');
                 document.body.style.overflow = 'auto';
             }
+
+            function copyEmail() {
+                const emailAddress = document.getElementById('email-address').textContent;
+                navigator.clipboard.writeText(emailAddress).then(() => {
+                    const button = document.querySelector('button[onclick="copyEmail()"]');
+                    const originalIcon = button.innerHTML;
+                    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+                    setTimeout(() => {
+                        button.innerHTML = originalIcon;
+                    }, 2000);
+                });
+            }
+
+            function updateTime() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-US', { 
+                    hour12: true, 
+                    hour: '2-digit', 
+                    minute: '2-digit'
+                });
+                const timeElement = document.getElementById('local-time');
+                if (timeElement) timeElement.textContent = timeString + ' PHT';
+            }
+
+            setInterval(updateTime, 1000);
+            updateTime();
+
+            // Contact Form AJAX Submission
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const form = this;
+                const button = form.querySelector('button[type="submit"]');
+                const originalContent = button.innerHTML;
+                
+                // Set sending state
+                button.disabled = true;
+                button.innerHTML = `
+                    Sending...
+                    <svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+                `;
+
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => data[key] = value);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(result => {
+                    // Success state
+                    button.innerHTML = `
+                        Message Sent!
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    `;
+                    form.reset();
+                    
+                    setTimeout(() => {
+                        button.disabled = false;
+                        button.innerHTML = originalContent;
+                    }, 3000);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    button.disabled = false;
+                    button.innerHTML = originalContent;
+                    alert('Something went wrong. Please try again.');
+                });
+            });
+
+            function toggleTheme() {
+                const html = document.documentElement;
+                const icon = document.getElementById('theme-icon');
+                const isLight = html.classList.toggle('light');
+                
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+                
+                if (isLight) {
+                    icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+                    document.getElementById('theme-toggle').classList.replace('text-white', 'text-slate-900');
+                } else {
+                    icon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line>';
+                    document.getElementById('theme-toggle').classList.replace('text-slate-900', 'text-white');
+                }
+            }
+
+            // Initialize theme
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'light') {
+                    toggleTheme();
+                }
+            });
 
             document.getElementById('menu-btn').addEventListener('click', toggleMenu);
         </script>
