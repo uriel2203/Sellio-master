@@ -11,12 +11,21 @@ $app = Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withProviders([
-        \Illuminate\View\ViewServiceProvider::class,
-        \Illuminate\Session\SessionServiceProvider::class,
+        \Illuminate\Auth\AuthServiceProvider::class,
         \Illuminate\Cache\CacheServiceProvider::class,
-        \Illuminate\Filesystem\FilesystemServiceProvider::class,
+        \Illuminate\Cookie\CookieServiceProvider::class,
         \Illuminate\Database\DatabaseServiceProvider::class,
         \Illuminate\Encryption\EncryptionServiceProvider::class,
+        \Illuminate\Filesystem\FilesystemServiceProvider::class,
+        \Illuminate\Foundation\Providers\FoundationServiceProvider::class,
+        \Illuminate\Hashing\HashServiceProvider::class,
+        \Illuminate\Pagination\PaginationServiceProvider::class,
+        \Illuminate\Pipeline\PipelineServiceProvider::class,
+        \Illuminate\Queue\QueueServiceProvider::class,
+        \Illuminate\Session\SessionServiceProvider::class,
+        \Illuminate\Translation\TranslationServiceProvider::class,
+        \Illuminate\Validation\ValidationServiceProvider::class,
+        \Illuminate\View\ViewServiceProvider::class,
     ])
     ->withMiddleware(function (Middleware $middleware): void {
         //
