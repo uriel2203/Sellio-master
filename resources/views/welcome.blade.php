@@ -16,28 +16,12 @@
 
     $experiences = [
         (object)[
-            'role' => 'Graduate with a BS in Information Technology',
-            'company' => 'Milestone 1',
-            'year' => '2025 - 2026',
-            'description' => 'I will finish my degree and strengthen my knowledge in networking, troubleshooting, and system operations.',
-            'color' => 'blue-500',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>'
-        ],
-        (object)[
-            'role' => 'Gain Experience Through Internships',
-            'company' => 'Milestone 2',
-            'year' => '2026 - 2027',
-            'description' => 'I will apply for internships or junior IT support positions to build real-world experience and improve my technical skills.',
-            'color' => 'accent-purple',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>'
-        ],
-        (object)[
-            'role' => 'Develop Soft Skills & Communication',
-            'company' => 'Milestone 3',
-            'year' => '2027 - 2028',
-            'description' => 'Practice problem-solving, clear communication, teamwork, and customer support all vital for IT roles interacting with users.',
-            'color' => 'cyan-400',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+            'role' => 'Advance to System Administrator',
+            'company' => 'Milestone 5',
+            'year' => '2030 - BEYOND',
+            'description' => 'I will continue learning, gain deeper experience in servers and networks, and take higher certifications to qualify as a System Administrator.',
+            'color' => 'emerald-400',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>'
         ],
         (object)[
             'role' => 'Work Full-Time as Web Developer',
@@ -48,12 +32,28 @@
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>'
         ],
         (object)[
-            'role' => 'Advance to System Administrator',
-            'company' => 'Milestone 5',
-            'year' => '2030 - BEYOND',
-            'description' => 'I will continue learning, gain deeper experience in servers and networks, and take higher certifications to qualify as a System Administrator.',
-            'color' => 'emerald-400',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>'
+            'role' => 'Develop Soft Skills & Communication',
+            'company' => 'Milestone 3',
+            'year' => '2027 - 2028',
+            'description' => 'Practice problem-solving, clear communication, teamwork, and customer support all vital for IT roles interacting with users.',
+            'color' => 'cyan-400',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+        ],
+        (object)[
+            'role' => 'Gain Experience Through Internships',
+            'company' => 'Milestone 2',
+            'year' => '2026 - 2027',
+            'description' => 'I will apply for internships or junior IT support positions to build real-world experience and improve my technical skills.',
+            'color' => 'accent-purple',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>'
+        ],
+        (object)[
+            'role' => 'Graduate with a BS in Information Technology',
+            'company' => 'Milestone 1',
+            'year' => '2025 - 2026',
+            'description' => 'I will finish my degree and strengthen my knowledge in networking, troubleshooting, and system operations.',
+            'color' => 'blue-500',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>'
         ]
     ];
 
@@ -116,7 +116,8 @@
             'description' => 'I specialize in building robust and scalable backend systems using Laravel. Expertise in Eloquent ORM, service providers, and architecting complex business logic.',
             'proficiencies' => ['Eloquent ORM', 'API Development', 'Middleware', 'Security'],
             'usage' => 'Backend Core & Enterprise logic',
-            'color' => 'red-500'
+            'color' => 'red-500',
+            'link' => 'https://laravel.com'
         ],
         (object)[
             'name' => 'Tailwind CSS',
@@ -125,7 +126,8 @@
             'description' => 'I specialize in building highly responsive and visually stunning layouts using Tailwind CSS. Expertise in extending the theme and building multi-brand design systems.',
             'proficiencies' => ['Responsive Design', 'JIT Engine', 'Custom Configurations', 'CSS Variables'],
             'usage' => 'Rapid UI Development & Styling',
-            'color' => 'accent-pink'
+            'color' => 'accent-pink',
+            'link' => 'https://tailwindcss.com'
         ],
         (object)[
             'name' => 'JavaScript ES6+',
@@ -134,7 +136,8 @@
             'description' => 'Strong foundation in modern JavaScript, focusing on performance, asynchronous programming, and clean code principles.',
             'proficiencies' => ['Async/Await', 'ESM', 'DOM Manipulation', 'Functional Programming'],
             'usage' => 'Client-side Logic & Interactivity',
-            'color' => 'yellow-500'
+            'color' => 'yellow-500',
+            'link' => 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
         ],
         (object)[
             'name' => 'Figma',
@@ -143,7 +146,8 @@
             'description' => 'Expert in hi-fi prototyping, design systems, and vector editing. Bridging the gap between conceptual design and frontend implementation.',
             'proficiencies' => ['Prototyping', 'Auto-Layout', 'Design Systems', 'Variants'],
             'usage' => 'Prototyping & Visual Design',
-            'color' => 'accent-purple'
+            'color' => 'accent-purple',
+            'link' => 'https://www.figma.com'
         ],
         (object)[
             'name' => 'Git & Github',
@@ -152,7 +156,8 @@
             'description' => 'Proficient in team collaboration environments using Git workflows, branching strategies, and CI/CD pipelines.',
             'proficiencies' => ['Git Flow', 'Pull Requests', 'Actions', 'Resolving Conflicts'],
             'usage' => 'Collaboration & Source Control',
-            'color' => 'accent-pink'
+            'color' => 'accent-pink',
+            'link' => 'https://github.com'
         ],
         (object)[
             'name' => 'Node & Next.js',
@@ -161,7 +166,8 @@
             'description' => 'Enthusiastic about Server-Side Rendering (SSR) and Static Site Generation (SSG). Building performant and SEO-friendly applications.',
             'proficiencies' => ['App Router', 'API Routes', 'Server Components', 'Middleware'],
             'usage' => 'Fullstack Dev & Server Logic',
-            'color' => 'green-500'
+            'color' => 'green-500',
+            'link' => 'https://nextjs.org'
         ],
     ];
 
@@ -1021,9 +1027,9 @@
                                     <h5 id="modalCertName" class="font-bold"></h5>
                                     <p class="text-[10px] opacity-30 uppercase tracking-widest">Typical Application</p>
                                 </div>
-                                <div class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition">
+                                <a id="modalLink" href="#" target="_blank" class="w-10 h-10 rounded-full bg-accent-purple/10 flex items-center justify-center text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 22 3 22 10"></polyline><line x1="10" y1="14" x2="22" y2="2"></line></svg>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1085,6 +1091,7 @@
                 const description = document.getElementById('modalDescription');
                 const proficiencies = document.getElementById('modalProficiencies');
                 const certName = document.getElementById('modalCertName');
+                const link = document.getElementById('modalLink');
 
                 name.textContent = tool.name;
                 category.textContent = tool.category;
@@ -1096,6 +1103,14 @@
 
                 description.textContent = tool.description;
                 certName.textContent = tool.usage;
+                
+                // Set Link
+                if (tool.link) {
+                    link.href = tool.link;
+                    link.style.display = 'flex';
+                } else {
+                    link.style.display = 'none';
+                }
 
                 // Proficiencies
                 proficiencies.innerHTML = '';
