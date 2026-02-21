@@ -16,42 +16,42 @@
 
     $experiences = [
         (object)[
-            'role' => 'Advance to System Administrator',
-            'company' => 'Milestone 5',
+            'role' => 'Infrastructure Leadership',
+            'company' => 'System Architect & Engineering',
             'year' => '2030 - BEYOND',
-            'description' => 'I will continue learning, gain deeper experience in servers and networks, and take higher certifications to qualify as a System Administrator.',
+            'description' => 'Architecting enterprise-scale network resilience and leading technical teams toward secure, high-availability infrastructure solutions.',
             'color' => 'emerald-400',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>'
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>'
         ],
         (object)[
-            'role' => 'Work Full-Time as Web Developer',
-            'company' => 'Milestone 4',
-            'year' => '2028 - 2030',
-            'description' => 'I will apply my skills in a professional environment, building high-performance web applications and modern digital experiences.',
+            'role' => 'Enterprise Engineering',
+            'company' => 'Full-Stack Developer Transition',
+            'year' => '2027 - 2029',
+            'description' => 'Scaling digital experiences through modular system design and cloud-native application development for complex industrial environments.',
             'color' => 'accent-pink',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>'
         ],
         (object)[
-            'role' => 'Develop Soft Skills & Communication',
-            'company' => 'Milestone 3',
-            'year' => '2027 - 2028',
-            'description' => 'Practice problem-solving, clear communication, teamwork, and customer support all vital for IT roles interacting with users.',
+            'role' => 'Professional Integration',
+            'company' => 'Industrial Immersion & Internship',
+            'year' => '2026 - 2027',
+            'description' => 'Bridging technical expertise with commercial environments, focusing on cross-functional collaboration and agile development workflows.',
             'color' => 'cyan-400',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>'
         ],
         (object)[
-            'role' => 'Gain Experience Through Internships',
-            'company' => 'Milestone 2',
-            'year' => '2026 - 2027',
-            'description' => 'I will apply for internships or junior IT support positions to build real-world experience and improve my technical skills.',
+            'role' => 'Technical Specialization',
+            'company' => 'Advanced Project Development',
+            'year' => '2024 - 2025',
+            'description' => 'Developed high-stakes systems like the Social Welfare Distribution platform, Sellio Android App, News API, and E-commerce platform,mastering security-first backend architecture and database logic.',
             'color' => 'accent-purple',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>'
         ],
         (object)[
-            'role' => 'Graduate with a BS in Information Technology',
-            'company' => 'Milestone 1',
-            'year' => '2025 - 2026',
-            'description' => 'I will finish my degree and strengthen my knowledge in networking, troubleshooting, and system operations.',
+            'role' => 'Academic Foundation',
+            'company' => 'BS in Information Technology',
+            'year' => '2022 - 2026',
+            'description' => 'Forging a strong foundation in networking, system operations, and technical logic at the University of Mindanao.',
             'color' => 'blue-500',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>'
         ]
@@ -130,7 +130,7 @@
             'link' => 'https://tailwindcss.com'
         ],
         (object)[
-            'name' => 'JavaScript ES6+',
+            'name' => 'JavaScript',
             'category' => 'Programming Language',
             'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 2 6 6-6 6-6-6Z"/><path d="m14 10 6 6-6 6-6-6Z"/></svg>',
             'description' => 'Strong foundation in modern JavaScript, focusing on performance, asynchronous programming, and clean code principles.',
@@ -150,42 +150,47 @@
             'link' => 'https://www.figma.com'
         ],
         (object)[
-            'name' => 'Git & Github',
-            'category' => 'Version Control',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>',
-            'description' => 'Proficient in team collaboration environments using Git workflows, branching strategies, and CI/CD pipelines.',
-            'proficiencies' => ['Git Flow', 'Pull Requests', 'Actions', 'Resolving Conflicts'],
-            'usage' => 'Collaboration & Source Control',
-            'color' => 'accent-pink',
-            'link' => 'https://github.com'
+            'name' => 'HTML5 & Semantic Web',
+            'category' => 'Frontend Foundation',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 18-5-6 5-6"/><path d="m17 6 5 6-5 6"/><path d="m13 6-2 12"/></svg>',
+            'description' => 'Expertise in architecting accessible, SEO-optimized, and semantic structures for high-performance web applications.',
+            'proficiencies' => ['Semantic HTML', 'Accessibility (A11y)', 'SEO Best Practices', 'Web Components'],
+            'usage' => 'Structural Foundation',
+            'color' => 'orange-500',
+            'link' => 'https://developer.mozilla.org/en-US/docs/Web/HTML'
         ],
         (object)[
-            'name' => 'Node & Next.js',
-            'category' => 'Fullstack Framework',
-            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>',
-            'description' => 'Enthusiastic about Server-Side Rendering (SSR) and Static Site Generation (SSG). Building performant and SEO-friendly applications.',
-            'proficiencies' => ['App Router', 'API Routes', 'Server Components', 'Middleware'],
-            'usage' => 'Fullstack Dev & Server Logic',
-            'color' => 'green-500',
-            'link' => 'https://nextjs.org'
+            'name' => 'MySQL',
+            'category' => 'Relational Database',
+            'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><ellipse cx="12" cy="11" rx="5" ry="3"/><path d="M7 11v3.5l5 2.5 5-2.5V11"/></svg>',
+            'description' => 'Proficient in designing efficient schemas, optimizing complex queries, and managing relational data integrity for scalable systems.',
+            'proficiencies' => ['Schema Design', 'Query Optimization', 'Joins & Relationships', 'ACID Compliance'],
+            'usage' => 'Data Persistence & Architecture',
+            'color' => 'blue-400',
+            'link' => 'https://www.mysql.com'
         ],
     ];
 
     $projects = [
         (object)[
-            'title' => 'Core Systems Architecture',
-            'description' => 'A high-performance backend engine designed for large-scale enterprise data management.',
-            'image' => 'https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=1000&auto=format&fit=crop'
+            'title' => 'Social Welfare Distribution',
+            'description' => 'An online platform for efficient management and transparent distribution of social welfare assistance. I am one of the developers (Back-end) for this reliable, cloud-based solution.',
+            'image' => asset('image/social welfare.jpg'),
+            'github_link' => 'https://github.com/KEmsss11/NEW-FINAL-16'
         ],
         (object)[
-            'title' => 'Cloud Workspace OS',
-            'description' => 'Redefining for digital workspace through modular system architecture.',
-            'image' => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop'
+            'title' => 'Sellio: Android Marketplace',
+            'description' => 'A blockchain-integrated marketplace for secure peer-to-peer transactions. Served as the System Analyst for this Capstone project, ensuring technical feasibility and architectural integrity.',
+            'image' => asset('image/home.jpg'),
+            'github_link' => 'https://github.com/uriel2203/Sellio-master',
+            'demo_id' => 'sellio-demo'
         ],
         (object)[
-            'title' => 'Aether Protocol',
-            'description' => 'A decentralized mesh protocol for low-latency network recovery.',
-            'image' => 'https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1000&auto=format&fit=crop'
+            'title' => 'Global News Pulse',
+            'description' => 'A dynamic news aggregation platform powered by the News API. Features real-time headline fetching with advanced filtering capabilities by category, language, and country.',
+            'image' => asset('image/news_api.jpg'),
+            'github_link' => 'https://github.com/uriel2203/News',
+            'demo_id' => 'news-demo'
         ],
     ];
 
@@ -356,6 +361,19 @@
             .animate-float {
                 animation: float 6s ease-in-out infinite;
             }
+
+            /* Fix for select options visibility */
+            select option {
+                background-color: #1a0b2e; /* Solid dark color for options */
+                color: #ffffff;
+            }
+            @keyframes contentFade {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-content-fade {
+                animation: contentFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            }
         </style>
 
 
@@ -369,7 +387,7 @@
                 <a href="#" class="text-xl font-bold text-[var(--text-main)] flex items-center gap-1">
                     <span class="text-accent-pink">&lt;</span>JohnDev<span class="text-accent-pink">/&gt;</span>
                 </a>
-                <span class="text-[8px] tracking-[0.3em] font-bold text-[var(--text-muted)] mt-1 uppercase">Information Technology Student</span>
+                <span class="text-[8px] tracking-[0.3em] font-bold text-[var(--text-muted)] mt-1 uppercase">BS in Information Technology</span>
             </div>
             
             <!-- Desktop Nav -->
@@ -385,11 +403,21 @@
                     <button id="theme-toggle" class="text-[var(--text-main)] hover:text-accent-pink transition w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)]" onclick="toggleTheme()">
                         <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
                     </button>
-                    <a href="#contact" class="px-6 py-2 border border-accent-purple rounded-full text-sm font-bold text-accent-purple hover:bg-accent-purple hover:text-white transition shadow-[0_0_15px_rgba(139,92,246,0.3)]">
+                    <a href="#contact" class="hidden md:inline-flex px-6 py-2 border border-accent-purple rounded-full text-sm font-bold text-accent-purple hover:bg-accent-purple hover:text-white transition shadow-[0_0_15px_rgba(139,92,246,0.3)]">
                         Contact Me
                     </a>
                 </div>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center gap-4">
+                <button id="theme-toggle-mobile" class="text-[var(--text-main)] hover:text-accent-pink transition w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)]" onclick="toggleTheme()">
+                    <svg id="theme-icon-mobile" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+                </button>
+                <button id="menu-btn" class="text-[var(--text-main)] hover:text-accent-pink transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
 
             <!-- Mobile Nav Container -->
             <div id="mobile-menu" class="fixed top-[88px] left-0 w-full bg-[var(--primary-bg)]/95 backdrop-blur-xl border-b border-[var(--border-color)] flex flex-col items-center py-10 gap-6 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 md:hidden z-40 text-[var(--text-main)]">
@@ -419,14 +447,14 @@
         </script>
 
         <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen flex items-center px-6 md:px-[9%] py-20 overflow-hidden">
+        <section id="home" class="relative min-h-screen flex items-center px-6 md:px-[9%] py-12 md:py-20 overflow-hidden">
             <!-- Background Nebula Effect -->
             <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-purple/10 to-transparent pointer-events-none"></div>
 
-            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-12 relative z-10">
-                <div class="space-y-10 order-2 lg:order-1 relative z-10">
+            <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-8 md:gap-12 relative z-10">
+                <div class="space-y-10 order-2 lg:order-1 relative z-10 flex flex-col items-center text-center lg:items-start lg:text-left">
                     <!-- Badge -->
-                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] animate-fade-in">
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-[var(--card-bg)] border border-[var(--border-color)] animate-fade-in w-fit">
                         <span class="relative flex h-2 w-2">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-purple opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-purple"></span>
@@ -436,7 +464,7 @@
 
                     <!-- Main Heading -->
                     <div class="space-y-4">
-                        <h1 class="text-5xl md:text-7xl font-black text-[var(--text-main)] leading-[0.9] tracking-tighter">
+                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-[var(--text-main)] leading-[0.9] tracking-tighter">
                             <span class="block">Creative Solutions</span>
                             <span class="block text-gradient">Digital World</span>
                         </h1>
@@ -451,7 +479,7 @@
                     </div>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-wrap items-center gap-6">
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6">
                         <a href="#projects" class="px-10 py-5 bg-accent-purple text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all duration-300 shadow-xl shadow-accent-purple/20 active:scale-95 flex items-center gap-3">
                             View Portfolio
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="translate-x-0 group-hover:translate-x-1 transition"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -462,31 +490,17 @@
                         </a>
                     </div>
 
-                    <!-- Stats Grid -->
-                    <div class="grid grid-cols-3 gap-12 pt-10 border-t border-[var(--border-color)]">
-                        <div class="space-y-1">
-                            <h4 class="text-4xl font-black text-[var(--text-main)]">5+</h4>
-                            <p class="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-[0.2em]">Experience</p>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="text-4xl font-black text-[var(--text-main)]">50+</h4>
-                            <p class="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-[0.2em]">Projects</p>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="text-4xl font-black text-[var(--text-main)]">20+</h4>
-                            <p class="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-[0.2em]">Clients</p>
-                        </div>
-                    </div>
+                    
                 </div>
                 
                 <div class="relative order-1 lg:order-2">
-                    <div class="relative rounded-[3rem] overflow-hidden border border-[var(--border-color)] group shadow-2xl max-w-[80%] ml-auto">
+                    <div class="relative rounded-[3rem] overflow-hidden border border-[var(--border-color)] group shadow-2xl max-w-[80%] mx-auto lg:ml-auto">
                         <img src="{{ $profile->image }}" alt="John" class="w-full aspect-[4/5] object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition duration-1000 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#05010d] via-transparent to-transparent opacity-60"></div>
                     </div>
 
                     <!-- Floating Terminal Card -->
-                    <div class="absolute -bottom-10 -left-10 md:-left-20 w-72 p-6 rounded-2xl bg-[#1e1e2e]/90 backdrop-blur-xl border border-white/5 shadow-2xl animate-float" style="animation-delay: 0.5s;">
+                    <div class="absolute -bottom-10 -left-4 md:-left-20 w-64 md:w-72 p-4 md:p-6 rounded-2xl bg-[#1e1e2e]/90 backdrop-blur-xl border border-white/5 shadow-2xl animate-float lg:block hidden" style="animation-delay: 0.5s;">
                         <div class="flex gap-2 mb-4">
                             <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
                             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
@@ -495,7 +509,7 @@
                         <div class="space-y-2 font-mono text-xs">
                             <p class="text-blue-400">const <span class="text-white">developer</span> = {</p>
                             <p class="pl-4 text-white/50">name: <span class="text-accent-pink">'Uriel John'</span>,</p>
-                            <p class="pl-4 text-white/50">passion: <span class="text-accent-pink">'Tech Alchemy'</span></p>
+                            <p class="pl-4 text-white/50">passion: <span class="text-accent-pink">'Web Development'</span></p>
                             <p class="text-blue-400">};</p>
                         </div>
                     </div>
@@ -504,7 +518,7 @@
         </section>
 
 
-        <section id="about" class="py-24 md:py-32 px-6 md:px-[9%] border-y border-[var(--border-color)] relative overflow-hidden">
+        <section id="about" class="py-16 md:py-32 px-6 md:px-[9%] border-y border-[var(--border-color)] relative overflow-hidden">
             <div class="max-w-7xl mx-auto w-full relative z-10">
                 <div class="text-center space-y-2 mb-16">
                     <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">Overview</p>
@@ -521,26 +535,26 @@
                             <h3 class="text-xl font-bold text-[var(--text-main)]">Who Am I?</h3>
                         </div>
                         <div class="space-y-4 text-[var(--text-muted)] leading-relaxed text-sm md:text-base">
-                            <p>
-                                Hi! I'm <span class="text-[var(--text-main)] font-bold">Uriel John</span>, a dedicated <span class="text-accent-pink font-bold">IT Student</span> based in the Philippines. 
-                                I have a deep passion for creating digital interfaces that are not only functional but also visually stunning. 
-                                With a background in Technical Information, I bridge the gap between code logic and design aesthetics.
+                          <p class="text-justify">
+                            Hi! I'm <span class="text-[var(--text-main)] font-bold">Uriel John</span>, a dedicated <span class="text-accent-pink font-bold">Web Developer</span> based in the Philippines. 
+                            I build modern web applications that are fast, secure, and easy to use, focusing on systems that work smoothly and give users a good experience.
                             </p>
-                            <p>
-                                My journey in tech is driven by curiosity and the desire to build things that make an impact. 
-                                Whether it's architecting complex systems or fine-tuning micro-interactions, I strive for excellence in every project.
+
+                            <p class="text-justify">
+                                I have strong skills in both backend and frontend development. I create secure APIs, manage databases, design responsive layouts, and improve performance to make reliable and scalable web solutions. 
+                            </p> 
+
+                            <p class="text-justify">
+                                I continue to learn and improve my skills to become a better developer. I enjoy solving real-world problems through code, efficient system design, and simple user experiences, aiming to build web applications that are useful, maintainable, and impactful. 
                             </p>
                         </div>
                     </div>
 
                     <!-- Experience Stats Card -->
                     <div class="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-3xl p-8 flex flex-col justify-center items-center text-center hover:border-accent-purple/30 transition duration-500">
-                        <div class="space-y-2 mb-8">
-                            <h4 class="text-5xl font-bold text-gradient">2+</h4>
-                            <p class="text-[10px] tracking-[0.2em] font-black text-[var(--text-muted)] uppercase">Years Experience</p>
-                        </div>
+                        
                         <div class="space-y-2">
-                            <h4 class="text-5xl font-bold text-[var(--text-main)]">15+</h4>
+                            <h4 class="text-5xl font-bold text-[var(--text-main)]">4</h4>
                             <p class="text-[10px] tracking-[0.2em] font-black text-[var(--text-muted)] uppercase">Projects Done</p>
                         </div>
                     </div>
@@ -604,11 +618,11 @@
             </div>
         </section>
 
-        <section id="edu" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
+        <section id="edu" class="py-16 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
             <div class="max-w-7xl mx-auto w-full space-y-16">
                 <div class="text-center space-y-2">
-                    <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">My Journey</p>
-                    <h2 class="text-4xl md:text-5xl font-bold text-[var(--text-main)]">Education & <span class="text-gradient">Experience</span></h2>
+                    <p class="text-accent-purple text-xs font-bold tracking-[0.4em] uppercase">The Roadmap</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-[var(--text-main)]">Strategic <span class="text-gradient">Evolution</span></h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -638,7 +652,7 @@
         </section>
 
         <!-- Certificates Section -->
-        <section id="certs" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)] overflow-hidden">
+        <section id="certs" class="py-16 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)] overflow-hidden">
             <div class="max-w-7xl mx-auto w-full space-y-20">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
                     <div class="space-y-4">
@@ -684,7 +698,7 @@
             </div>
         </section>
 
-        <section id="skills" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
+        <section id="skills" class="py-16 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
             <div class="max-w-7xl mx-auto w-full space-y-16">
                 <div class="text-center space-y-2">
                     <p class="text-accent-pink text-xs font-bold tracking-[0.4em] uppercase">Tech Stack</p>
@@ -708,7 +722,7 @@
         </section>
 
         <!-- Projects Section (Selected Works) -->
-        <section id="projects" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
+        <section id="projects" class="py-16 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)]">
             <div class="max-w-7xl mx-auto w-full space-y-16">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
                     <div class="space-y-2">
@@ -721,21 +735,45 @@
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     @foreach($projects as $project)
-                    <div class="group relative bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[2rem] overflow-hidden hover:border-accent-purple/30 transition-all duration-500">
-                        <div class="aspect-[16/10] overflow-hidden">
-                            <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition duration-1000">
+                    <div class="group bg-[var(--card-bg)] border border-[var(--border-color)] rounded-[3rem] overflow-hidden hover:border-accent-purple/30 transition-all duration-700 hover:shadow-[0_30px_100px_rgba(0,0,0,0.3)]">
+                        <!-- Image Section -->
+                        <div class="relative aspect-[16/10] overflow-hidden m-4 rounded-[2rem]">
+                            <img src="{{ $project->image }}" alt="{{ $project->title }}" class="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-105 group-hover:scale-110 transition duration-1000">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                         </div>
                         
-                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
-                            <div class="flex justify-between items-end">
-                                <div class="space-y-2">
-                                    <h3 class="text-2xl font-bold mb-2 text-white">{{ $project->title }}</h3>
-                                    <p class="text-white/70 text-sm max-w-md line-clamp-2">{{ $project->description }}</p>
+                        <!-- Content Section -->
+                        <div class="p-10 pt-4 space-y-8">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-3xl font-black text-[var(--text-main)] group-hover:text-accent-purple transition-colors duration-500 tracking-tight">{{ $project->title }}</h3>
+                                    <div class="h-px flex-1 mx-6 bg-[var(--border-color)]"></div>
+                                    <span class="text-[10px] font-black text-accent-pink uppercase tracking-widest">Featured</span>
                                 </div>
-                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white backdrop-blur-md group-hover:bg-accent-purple transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                <p class="text-[var(--text-muted)] text-[13px] leading-relaxed font-medium uppercase tracking-wider">
+                                    {{ $project->description }}
+                                </p>
+                            </div>
+                            
+                            <div class="flex items-center gap-6">
+                                @if(isset($project->demo_id))
+                                <button onclick="openProjectDemo('{{ $project->demo_id }}')" class="px-8 py-3.5 bg-accent-purple text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] transition-all duration-300">
+                                    View Project Case Study
+                                </button>
+                                @endif
+                                
+                                <div class="flex items-center gap-4">
+                                    @if(isset($project->github_link) && $project->github_link !== '#')
+                                    <a href="{{ $project->github_link }}" target="_blank" class="w-12 h-12 rounded-2xl bg-[var(--text-main)]/5 border border-[var(--border-color)] flex items-center justify-center text-[var(--text-main)] hover:bg-[var(--text-main)] hover:text-[var(--primary-bg)] group/link transition-all" title="View Source on GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:scale-110 group-hover/link:rotate-12 transition-all"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    </a>
+                                    @elseif(isset($project->github_link))
+                                    <div class="w-12 h-12 rounded-2xl bg-[var(--text-main)]/5 border border-[var(--border-color)] flex items-center justify-center text-[var(--text-muted)] cursor-not-allowed" title="Private Repository">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -747,14 +785,14 @@
 
 
         <!-- Contact Section -->
-        <section id="contact" class="py-24 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)] overflow-hidden">
+        <section id="contact" class="py-16 md:py-32 px-6 md:px-[9%] border-t border-[var(--border-color)] overflow-hidden">
             <div class="max-w-7xl mx-auto w-full space-y-20">
                 <div class="text-center space-y-4">
                     <p class="text-accent-purple text-xs font-bold tracking-[0.5em] uppercase">Get In Touch</p>
                     <h2 class="text-5xl md:text-7xl font-black text-[var(--text-main)] leading-tight">Let's <span class="text-gradient">Connect</span></h2>
                 </div>
 
-                <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
                     <!-- Left: Info Cards -->
                     <div class="lg:col-span-4 flex flex-col gap-4 h-full">
                         <!-- Email Card -->
@@ -805,7 +843,7 @@
                         <div class="h-px w-full bg-gradient-to-r from-transparent via-[var(--border-color)] to-transparent my-2"></div>
 
                         <!-- Social Cards Row -->
-                        <div class="flex gap-4">
+                        <div class="flex flex-wrap gap-4">
                             <a href="https://www.linkedin.com/in/urieljohn-chavez-b9a010398/" target="_blank" class="group flex-1 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-4 flex items-center justify-center hover:border-blue-400/50 transition-all duration-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-[var(--text-muted)] group-hover:text-blue-400 transition-colors duration-500"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                             </a>
@@ -973,6 +1011,42 @@
             </div>
         </div>
 
+        <!-- Project Demo Full-Screen View -->
+        <div id="projectDemoModal" class="fixed inset-0 z-[300] hidden bg-[var(--primary-bg)] flex flex-col transition-colors duration-500">
+            <!-- Navigation Header -->
+            <div class="sticky top-0 w-full px-6 md:px-12 py-6 border-b border-[var(--border-color)] bg-[var(--primary-bg)]/80 backdrop-blur-2xl z-[310] flex items-center justify-between transition-colors duration-500">
+                <button onclick="closeProjectDemo()" class="flex items-center gap-3 group px-4 py-2 rounded-xl hover:bg-[var(--text-main)]/5 transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--text-main)]/5 flex items-center justify-center text-[var(--text-main)] group-hover:-translate-x-1 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-[0.2em] leading-none mb-1">Return to</p>
+                        <p class="text-xs font-black text-[var(--text-main)] uppercase tracking-widest leading-none">Main Portfolio</p>
+                    </div>
+                </button>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <div class="text-right">
+                        <h2 id="demoTitle" class="text-lg font-black text-[var(--text-main)] uppercase tracking-tighter">Project Showcase</h2>
+                        <p id="demoSubtitle" class="text-[8px] font-bold text-accent-purple uppercase tracking-[0.2em]">Detailed Case Study & Experience</p>
+                    </div>
+                    <div class="w-px h-8 bg-[var(--border-color)]"></div>
+                    <div class="w-10 h-10 rounded-xl bg-accent-purple/20 flex items-center justify-center text-accent-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a 9 9 0 0 1 0 18 9 9 0 0 1 0 -18Z"></path><path d="M7 12 l5 5 l10-10"></path></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="flex-1 overflow-y-auto custom-scrollbar">
+                <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+                    <div id="demoContent" class="animate-content-fade text-[var(--text-main)]">
+                        <!-- Content will be injected via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Tool Detail Modal -->
         <div id="toolModal" class="fixed inset-0 z-[200] hidden flex items-center justify-center p-4">
             <div class="absolute inset-0 bg-black/80 backdrop-blur-md" onclick="closeToolModal()"></div>
@@ -984,12 +1058,12 @@
 
                 <div class="p-8 md:p-12 space-y-10">
                     <!-- Header -->
-                    <div class="flex items-center gap-6">
-                        <div id="modalIcon" class="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4 md:gap-6">
+                        <div id="modalIcon" class="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg shrink-0">
                             <!-- Icon will be injected here -->
                         </div>
                         <div>
-                            <h3 id="modalName" class="text-3xl font-bold tracking-tight"></h3>
+                            <h3 id="modalName" class="text-2xl md:text-3xl font-bold tracking-tight"></h3>
                             <p id="modalCategory" class="text-xs font-bold opacity-40 uppercase tracking-[0.2em] mt-1"></p>
                         </div>
                     </div>
@@ -1259,16 +1333,20 @@
             function toggleTheme() {
                 const html = document.documentElement;
                 const icon = document.getElementById('theme-icon');
+                const iconMobile = document.getElementById('theme-icon-mobile');
                 const isLight = html.classList.toggle('light');
                 
                 localStorage.setItem('theme', isLight ? 'light' : 'dark');
                 
+                const moonIcon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+                const sunIcon = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line>';
+
                 if (isLight) {
-                    icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
-                    // Color handled by CSS variables
+                    if(icon) icon.innerHTML = moonIcon;
+                    if(iconMobile) iconMobile.innerHTML = moonIcon;
                 } else {
-                    icon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="19.78"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line>';
-                    // Color handled by CSS variables
+                    if(icon) icon.innerHTML = sunIcon;
+                    if(iconMobile) iconMobile.innerHTML = sunIcon;
                 }
             }
 
@@ -1279,6 +1357,221 @@
                     toggleTheme();
                 }
             });
+
+            function openProjectDemo(demoId) {
+                const modal = document.getElementById('projectDemoModal');
+                const content = document.getElementById('demoContent');
+                const title = document.getElementById('demoTitle');
+                
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+
+                if (demoId === 'sellio-demo') {
+                    title.textContent = 'Sellio Marketplace';
+                    content.innerHTML = `
+                        <div class="space-y-20 pb-20">
+                            <!-- Hero Section -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                <div class="space-y-8">
+                                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-accent-purple/10 border border-accent-purple/20">
+                                        <img src="{{ asset('image/logo.png') }}" class="w-6 h-6 object-contain">
+                                        <span class="text-[10px] font-black uppercase tracking-widest text-accent-purple">Capstone Project 2024</span>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <h3 class="text-5xl font-black text-white leading-tight">Sellio: <span class="text-gradient">Blockchain</span> Marketplace</h3>
+                                        <p class="text-white/60 text-lg leading-relaxed max-w-xl">A decentralized Android ecosystem designed to eliminate transaction fraud through smart contracts and peer-to-peer transparency. This capstone project redefines trust in digital trade.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-4">
+                                        <div class="px-6 py-4 rounded-[2rem] bg-white/5 border border-white/5 backdrop-blur-sm">
+                                            <h4 class="text-accent-pink text-[8px] font-black uppercase tracking-widest mb-1">My Strategic Role</h4>
+                                            <p class="text-white font-bold text-sm">System Analyst & Architecture</p>
+                                        </div>
+                                        <div class="px-6 py-4 rounded-[2rem] bg-white/5 border border-white/5 backdrop-blur-sm">
+                                            <h4 class="text-cyan-400 text-[8px] font-black uppercase tracking-widest mb-1">Architecture</h4>
+                                            <p class="text-white font-bold text-sm">Web3 & Node.js Microservices</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative group">
+                                    <div class="absolute -inset-4 bg-accent-purple/20 blur-3xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+                                    <div class="relative aspect-video rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
+                                        <img src="{{ asset('image/sellio.jpg') }}" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                                            <div class="flex items-center gap-4">
+                                                <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center p-2 shadow-xl">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" class="w-full h-full">
+                                                </div>
+                                                <div>
+                                                    <p class="text-white font-black text-[10px] uppercase tracking-widest">Available on</p>
+                                                    <p class="text-white/50 text-[8px] uppercase tracking-[0.3em]">Google Play Store (Project Build)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- App Showcase: Category 1 -->
+                            <div class="space-y-12">
+                                <div class="text-center space-y-2">
+                                    <h4 class="text-2xl font-black text-white uppercase tracking-tighter">I. Platform Experience</h4>
+                                    <div class="w-20 h-1 bg-accent-purple mx-auto rounded-full"></div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    ${createAppFrame('login.jpg', 'Secure Authentication', 'Encrypted entry point ensuring user data integrity from the first interaction.')}
+                                    ${createAppFrame('home.jpg', 'Intuitive Discovery', 'Personalized marketplace feed with smart category filtering and trending items.')}
+                                    ${createAppFrame('details.jpg', 'Deep Insights', 'Immersive product overview with high-fidelity visuals and technical specifications.')}
+                                </div>
+                            </div>
+
+                            <!-- App Showcase: Category 2 -->
+                            <div class="space-y-12">
+                                <div class="text-center space-y-2">
+                                    <h4 class="text-2xl font-black text-white uppercase tracking-tighter">II. Marketforce Hub</h4>
+                                    <div class="w-20 h-1 bg-accent-pink mx-auto rounded-full"></div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                                    ${createAppFrame('offer.jpg', 'Smart Bidding', 'Real-time offer system allowing users to negotiate value dynamically.')}
+                                    ${createAppFrame('bidders.jpg', 'Live Auction Board', 'Transparent leaderboard showing active interest and competitive bids.')}
+                                    ${createAppFrame('chat.jpg', 'P2P Messaging', 'Secure real-time negotiation channel between buyers and sellers.')}
+                                    ${createAppFrame('location.jpg', 'Geospatial Context', 'Precise distance matrix visualization for localized trade optimization.')}
+                                </div>
+                            </div>
+
+                            <!-- App Showcase: Category 3 -->
+                            <div class="space-y-12">
+                                <div class="text-center space-y-2">
+                                    <h4 class="text-2xl font-black text-white uppercase tracking-tighter">III. Safety & Blockchain Integrity</h4>
+                                    <div class="w-20 h-1 bg-cyan-400 mx-auto rounded-full"></div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    ${createAppFrame('location_shared.jpg', 'Proximity Trust', 'Secure location synchronization for safe physical transaction meeting points.')}
+                                    ${createAppFrame('report.jpg', 'Vigilance System', 'Advanced reporting mechanisms to maintain a high-quality community environment.')}
+                                    ${createAppFrame('review.jpg', 'Reputation Score', 'Multi-dimensional user feedback system to drive reliable interactions.')}
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
+                                    ${createAppFrame('blockchain_review.jpg', 'Immutable Ledger Reviews', 'Blockchain-stored feedback that cannot be altered or falsified by third parties.', true)}
+                                    ${createAppFrame('transaction_details.jpg', 'Public Audit Trail', 'Complete cryptographic record of all successful transaction milestones.', true)}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else if (demoId === 'news-demo') {
+                    title.textContent = 'Global News Pulse';
+                    content.innerHTML = `
+                        <div class="space-y-20 pb-20">
+                            <!-- Hero Section -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                <div class="space-y-8">
+                                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20">
+                                        <svg class="text-cyan-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 20l-7-7-7 7V4h14v16z"></path></svg>
+                                        <span class="text-[10px] font-black uppercase tracking-widest text-cyan-400">Web Platform Project</span>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <h3 class="text-5xl font-black text-[var(--text-main)] leading-tight">Global <span class="text-gradient">News Pulse</span></h3>
+                                        <p class="text-[var(--text-muted)] text-lg leading-relaxed max-w-xl">A sophisticated web discovery engine that aggregates real-time intelligence from thousands of global sources. Architected for speed, responsiveness, and seamless navigation.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-4">
+                                        <div class="px-6 py-4 rounded-[2rem] bg-[var(--text-main)]/5 border border-[var(--border-color)] backdrop-blur-sm">
+                                            <h4 class="text-accent-pink text-[8px] font-black uppercase tracking-widest mb-1">Architecture</h4>
+                                            <p class="text-[var(--text-main)] font-bold text-sm">Frontend Web Stack</p>
+                                        </div>
+                                        <div class="px-6 py-4 rounded-[2rem] bg-[var(--text-main)]/5 border border-[var(--border-color)] backdrop-blur-sm">
+                                            <h4 class="text-accent-purple text-[8px] font-black uppercase tracking-widest mb-1">System Type</h4>
+                                            <p class="text-[var(--text-main)] font-bold text-sm">Responsive Web Application</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative group">
+                                    <div class="absolute -inset-4 bg-cyan-400/20 blur-3xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+                                    <div class="relative aspect-video rounded-[3rem] overflow-hidden border border-[var(--border-color)] shadow-2xl bg-[#0b011d]">
+                                        <img src="{{ asset('image/news_api.jpg') }}" class="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-700">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
+                                            <p class="text-white font-black text-[10px] uppercase tracking-widest">Interactive Web Dashboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Showcase: Fundamentals -->
+                            <div class="space-y-12">
+                                <div class="text-center space-y-2">
+                                    <h4 class="text-2xl font-black text-[var(--text-main)] uppercase tracking-tighter">I. Platform Fundamentals</h4>
+                                    <div class="w-20 h-1 bg-cyan-400 mx-auto rounded-full"></div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                    ${createWebFrame('loginpage.jpg', 'Authentication Portal', 'Modern login architecture designed for a secure and smooth user onboarding experience.')}
+                                    ${createWebFrame('news_api.jpg', 'Discovery Engine', 'Responsive grid system that handles massive data streams with elegant usability.')}
+                                </div>
+                            </div>
+
+                            <!-- Showcase: Intelligent Discovery -->
+                            <div class="space-y-12">
+                                <div class="text-center space-y-2">
+                                    <h4 class="text-2xl font-black text-[var(--text-main)] uppercase tracking-tighter">II. Sector Intelligence</h4>
+                                    <div class="w-20 h-1 bg-accent-purple mx-auto rounded-full"></div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                    ${createWebFrame('technology.jpg', 'Technology Focus', 'Optimized reading view for technical news and software development updates.')}
+                                    ${createWebFrame('sports.jpg', 'Sports Arena', 'High-impact layout for dynamic sports coverage and real-time event updates.')}
+                                    ${createWebFrame('business.jpg', 'Business Insights', 'Clean, data-focused interface for corporate headlines and market trends.')}
+                                    ${createWebFrame('health.jpg', 'Health & Science', 'Dedicated space for wellness breakthroughs and medical news discovery.')}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            function createAppFrame(img, title, desc, isHighlight = false) {
+                const borderClass = isHighlight ? 'border-accent-purple' : 'border-[var(--border-color)]';
+                return `
+                    <div class="group/frame space-y-6">
+                        <div class="aspect-[9/16] rounded-[2.5rem] overflow-hidden border ${borderClass} bg-black shadow-2xl relative transition-all duration-700 hover:scale-[1.02] hover:shadow-accent-purple/20">
+                            <img src="{{ asset('image/') }}/${img}" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/frame:opacity-100 transition duration-500 flex items-end p-6">
+                                <p class="text-[10px] font-bold text-white uppercase tracking-widest"></p>
+                            </div>
+                        </div>
+                        <div class="px-2 space-y-2">
+                            <h5 class="text-[var(--text-main)] font-black text-xs uppercase tracking-widest flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-purple"></span>
+                                ${title}
+                            </h5>
+                            <p class="text-[10px] text-[var(--text-muted)] leading-relaxed font-medium uppercase tracking-wider">${desc}</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            function createWebFrame(img, title, desc, isHighlight = false) {
+                const borderClass = isHighlight ? 'border-accent-purple shadow-accent-purple/20' : 'border-[var(--border-color)]';
+                return `
+                    <div class="group/frame space-y-6">
+                        <div class="aspect-video rounded-[2rem] overflow-hidden border ${borderClass} bg-[#0b011d] shadow-2xl relative transition-all duration-700 hover:scale-[1.03] hover:shadow-cyan-400/10">
+                            <img src="{{ asset('image/') }}/${img}" class="w-full h-full object-cover object-top transition duration-1000 group-hover/frame:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover/frame:opacity-100 transition duration-500 flex items-end p-8">
+                                <p class="text-[10px] font-bold text-white uppercase tracking-widest border-b border-cyan-400 pb-1">View Full Screen Preview</p>
+                            </div>
+                        </div>
+                        <div class="px-4 space-y-3">
+                            <h5 class="text-[var(--text-main)] font-black text-sm uppercase tracking-widest flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)]"></span>
+                                ${title}
+                            </h5>
+                            <p class="text-[11px] text-[var(--text-muted)] leading-relaxed font-medium uppercase tracking-[0.05em]">${desc}</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            function closeProjectDemo() {
+                const modal = document.getElementById('projectDemoModal');
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
 
             document.getElementById('menu-btn').addEventListener('click', toggleMenu);
         </script>
