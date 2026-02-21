@@ -40,6 +40,8 @@
         "DB_DATABASE": ":memory:",
         "SESSION_DRIVER": "cookie",
         "CACHE_STORE": "array",
-        "FILESYSTEM_DISK": "public"
+        "FILESYSTEM_DISK": "public",
+        "LARAVEL_STORAGE_PATH": "/tmp",
+        "VIEW_COMPILED_PATH": "/tmp/views"
     }
 }
