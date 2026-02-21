@@ -188,7 +188,7 @@
         ],
         (object)[
             'title' => 'Global News Pulse',
-            'description' => 'A dynamic news aggregation platform powered by the News API. Features real-time headline fetching with advanced filtering capabilities by category, language, and country.',
+            'description' => 'A dynamic news aggregation platform powered by the News API. Features almost real-time headline fetching with advanced filtering capabilities by category, language, and country.',
             'image' => asset('image/news_api.jpg'),
             'github_link' => 'https://github.com/uriel2203/News',
             'demo_id' => 'news-demo'
@@ -760,7 +760,7 @@
                             
                             <div class="flex items-center gap-6">
                                 @if(isset($project->demo_id))
-                                <button onclick="openProjectDemo('{{ $project->demo_id }}')" class="px-8 py-3.5 bg-accent-purple text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:scale-105 hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] transition-all duration-300">
+                                <button onclick="openProjectDemo('{{ $project->demo_id }}')" class="px-8 py-3.5 bg-[var(--primary-bg)] border border-[var(--border-color)] text-[var(--text-main)] rounded-2xl text-[10px] font-black uppercase tracking-widest hover:scale-105 hover:border-accent-purple/50 hover:shadow-[0_0_30px_rgba(139,92,246,0.2)] transition-all duration-300">
                                     View Project Case Study
                                 </button>
                                 @endif
@@ -1433,9 +1433,9 @@
                                     <div class="w-20 h-1 bg-accent-pink mx-auto rounded-full"></div>
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                                    ${createAppFrame('offer.jpg', 'Smart Bidding', 'Real-time offer system allowing users to negotiate value dynamically.')}
+                                    ${createAppFrame('offer.jpg', 'Smart Bidding', 'Almost real-time offer system allowing users to negotiate value dynamically.')}
                                     ${createAppFrame('bidders.jpg', 'Live Auction Board', 'Transparent leaderboard showing active interest and competitive bids.')}
-                                    ${createAppFrame('chat.jpg', 'P2P Messaging', 'Secure real-time negotiation channel between buyers and sellers.')}
+                                    ${createAppFrame('chat.jpg', 'P2P Messaging', 'Secure almost real-time negotiation channel between buyers and sellers.')}
                                     ${createAppFrame('location.jpg', 'Geospatial Context', 'Precise distance matrix visualization for localized trade optimization.')}
                                 </div>
                             </div>
@@ -1504,7 +1504,7 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                                     ${createWebFrame('loginwelfare.png', 'Authentication Gateway', 'Secure portal for administrative and professional access points.')}
-                                    ${createWebFrame('dashboard.png', 'Operations Dashboard', 'Real-time overview of system metrics and current help requests.')}
+                                    ${createWebFrame('dashboard.png', 'Operations Dashboard', 'Almost real-time overview of system metrics and current help requests.')}
                                 </div>
                             </div>
 
@@ -1557,7 +1557,7 @@
                                     </div>
                                     <div class="space-y-4">
                                         <h3 class="text-5xl font-black text-[var(--text-main)] leading-tight">Global <span class="text-gradient">News Pulse</span></h3>
-                                        <p class="text-[var(--text-muted)] text-lg leading-relaxed max-w-xl">A sophisticated web discovery engine that aggregates real-time intelligence from thousands of global sources. Architected for speed, responsiveness, and seamless navigation.</p>
+                                        <p class="text-[var(--text-muted)] text-lg leading-relaxed max-w-xl">A sophisticated web discovery engine that aggregates almost real-time intelligence from thousands of global sources. Architected for speed, responsiveness, and seamless navigation.</p>
                                     </div>
                                     
                                     <div class="flex flex-wrap gap-4">
@@ -1602,7 +1602,7 @@
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                                     ${createWebFrame('technology.jpg', 'Technology Focus', 'Optimized reading view for technical news and software development updates.')}
-                                    ${createWebFrame('sports.jpg', 'Sports Arena', 'High-impact layout for dynamic sports coverage and real-time event updates.')}
+                                    ${createWebFrame('sports.jpg', 'Sports Arena', 'High-impact layout for dynamic sports coverage and almost real-time event updates.')}
                                     ${createWebFrame('business.jpg', 'Business Insights', 'Clean, data-focused interface for corporate headlines and market trends.')}
                                     ${createWebFrame('health.jpg', 'Health & Science', 'Dedicated space for wellness breakthroughs and medical news discovery.')}
                                 </div>
