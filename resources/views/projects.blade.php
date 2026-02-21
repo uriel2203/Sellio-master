@@ -216,8 +216,8 @@
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            ${createWebFrame('social welfare.jpg', 'Modern Dashboard', 'Real-time overview of distribution metrics and case management systems.')}
-                            ${createWebFrame('register.jpg', 'Secure Enrollment', 'Multi-factor authentication and identity verification portal for beneficiaries.')}
+                            ${createWebFrame('loginwelfare.png', 'Authentication Gateway', 'Secure portal for administrative and professional access points.')}
+                            ${createWebFrame('dashboard.png', 'Operations Dashboard', 'Almost real-time overview of system metrics and current help requests.')}
                         </div>
 
                         <div class="space-y-6">
@@ -225,8 +225,8 @@
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            ${createWebFrame('assistance.jpg', 'Resource Mapping', 'Geospatial distribution tracking and logistics automation.')}
-                            ${createWebFrame('history.jpg', 'Audit Trail', 'End-to-end transparency log for every transaction and distribution event.')}
+                            ${createWebFrame('applicant.png', 'Entity Management', 'Comprehensive user profiles tracking history and eligibility.')}
+                            ${createWebFrame('application.png', 'Case Workflow', 'Dynamic processing system for assistance requests and approvals.')}
                         </div>
 
                         <div class="space-y-6">
@@ -234,8 +234,8 @@
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            ${createWebFrame('announcement.jpg', 'Public Relations', 'Centralized notification engine for scheduled distributions and updates.')}
-                            ${createWebFrame('feedback.jpg', 'Citizen portal', 'Encrypted feedback loop for service quality and grievance handling.')}
+                            ${createWebFrame('consultation.png', 'Service Logging', 'Detailed auditing of interactions and professional consultations.')}
+                            ${createWebFrame('stocks.png', 'Inventory Logic', 'Back-end management for physical resource distribution.')}
                         </div>
 
                         <div class="space-y-6">
@@ -255,18 +255,20 @@
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            ${createAppFrame('home.jpg', 'Core Marketplace', 'Fluid navigation and product discovery engine with smart category filtering.', true)}
-                            ${createAppFrame('product.jpg', 'Visual Listing', 'High-impact product presentation with detailed technical specifications.')}
-                            ${createAppFrame('profile.jpg', 'Merchant Center', 'Comprehensive dashboard for sellers to monitor performance and earnings.')}
+                            ${createAppFrame('login.jpg', 'Secure Authentication', 'Encrypted entry point ensuring user data integrity from the first interaction.', true)}
+                            ${createAppFrame('home.jpg', 'Intuitive Discovery', 'Fluid navigation and product discovery engine with smart category filtering.')}
+                            ${createAppFrame('details.jpg', 'Deep Insights', 'Immersive product overview with high-fidelity visuals and technical specifications.')}
                         </div>
 
                         <div class="space-y-6">
-                            <h3 class="text-3xl font-black text-[var(--text-main)] uppercase tracking-tighter">II. Transactional Security</h3>
+                            <h3 class="text-3xl font-black text-[var(--text-main)] uppercase tracking-tighter">II. Marketforce Hub</h3>
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            ${createAppFrame('order.jpg', 'Order Fulfillment', 'Dynamic tracking of transaction states and logistics updates.')}
-                            ${createAppFrame('details.jpg', 'Secure Checkout', 'Encrypted payment gateways and integrated marketplace escrow logic.')}
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            ${createAppFrame('offer.jpg', 'Smart Bidding', 'Almost real-time offer system allowing users to negotiate value dynamically.')}
+                            ${createAppFrame('bidders.jpg', 'Live Auction Board', 'Transparent leaderboard showing active interest and competitive bids.')}
+                            ${createAppFrame('chat.jpg', 'P2P Messaging', 'Secure almost real-time negotiation channel.')}
+                            ${createAppFrame('location.jpg', 'Geospatial Context', 'Precise distance matrix visualization for localized trade optimization.')}
                         </div>
                     </div>
                 `,
@@ -277,8 +279,8 @@
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            ${createWebFrame('news_api.jpg', 'Intelligence Feed', 'Real-time headline aggregation with advanced semantic filtering.', true)}
-                            ${createWebFrame('global.jpg', 'Global Discovery', 'Country-specific news nodes and language-localized content delivery.')}
+                            ${createWebFrame('loginpage.jpg', 'Authentication Portal', 'Modern login architecture designed for a secure user experience.', true)}
+                            ${createWebFrame('news_api.jpg', 'Intelligence Feed', 'Real-time headline aggregation with advanced semantic filtering.')}
                         </div>
 
                         <div class="space-y-6">
@@ -286,10 +288,10 @@
                             <div class="w-20 h-1 bg-accent-purple rounded-full"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            ${createWebFrame('technology.jpg', 'Technology Focus', 'Optimized reading view for technical news and software development updates.')}
-                            ${createWebFrame('sports.jpg', 'Sports Arena', 'High-impact layout for dynamic sports coverage and news updates.')}
-                            ${createWebFrame('business.jpg', 'Business Insights', 'Clean, data-focused interface for corporate headlines and market trends.')}
-                            ${createWebFrame('health.jpg', 'Health & Science', 'Dedicated space for wellness breakthroughs and medical news discovery.')}
+                            ${createWebFrame('technology.jpg', 'Technology Focus', 'Optimized reading view for technical news.')}
+                            ${createWebFrame('sports.jpg', 'Sports Arena', 'High-impact layout for dynamic sports coverage.')}
+                            ${createWebFrame('business.jpg', 'Business Insights', 'Clean, data-focused interface for corporate headlines.')}
+                            ${createWebFrame('health.jpg', 'Health & Science', 'Dedicated space for wellness breakthroughs.')}
                         </div>
                     </div>
                 `
